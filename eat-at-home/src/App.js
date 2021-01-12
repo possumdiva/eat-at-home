@@ -1,4 +1,4 @@
-import react, { Component } from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import Profile from './components/Profile';
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <hi>hello</hi>
+      
       
       <div className="nav"> 
 
