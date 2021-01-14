@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import Profile from './components/Profile';
 import About from './components/About';
-import Food from './components/Food';
+import Groceries from './components/Groceries';
+import Kits from './components/Kits';
+import Meals from './components/Meals';
 import Ratings from './components/Ratings';
 import Reviews from './components/Reviews';
 import Favorites from './components/Favorites';
@@ -25,7 +27,9 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/profile" component={Profile} />
           <Route path="/about" component={About} />
-          <Route path="/food" component={Food} />
+          <Route path="/meals" component={Meals} />
+          <Route path="/kits" component={Kits} />
+          <Route path="/groceries" component={Groceries} />
           <Route path="/ratings" component={Ratings} />
           <Route path="/reviews" component={Reviews} />
           <Route path="/favorites" component={Favorites} />
