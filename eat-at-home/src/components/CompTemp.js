@@ -5,14 +5,12 @@ import image from "./images/Header.jpeg";
 import Meals from "./Meals";
 import Kits from "./Kits";
 
-function Home() {
+function CompTemp() {
   return (
     <div classname="main">
       <NavBar />
-      <h1>
-        <span>EAT @ HOME</span>
-      </h1>
-      <div class="header-image">
+      <h1>{/* <span>EAT @ HOME</span> */}</h1>
+      <div class="temp-image">
         <img src={image} alt="header"></img>
       </div>
       <div class="feature-divider"></div>
@@ -52,4 +50,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default CompTemp;

@@ -1,5 +1,5 @@
-import React, { Component }from "react";
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => (
   <div className="navbar">
@@ -10,7 +10,6 @@ export const NavBar = () => (
     <Link to="/groceries">Groceries</Link>
     <Link to="/meals">Meals</Link>
     <Link to="/kits">Kits</Link>
-
-   
+    <Link to="/comptemp">Companies</Link>
   </div>
-)
+);

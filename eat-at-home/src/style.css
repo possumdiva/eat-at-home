@@ -1,114 +1,109 @@
 @import url(https://fonts.google.com/specimen/Bodoni+Moda?preview.text=EAT%20@%20HOME&preview.text_type=custom&sidebar.open=true&selection.family=Bodoni+Moda);
 body {
-	background-color: antiquewhite;
-	width: auto;
+  background-color: antiquewhite;
+  width: auto;
 }
 
-h1 { 
-	position: absolute; 
-	left: 0; 
-	width: 100%; 
-	text-align: center;
-	padding-top: 30px;
-	
- }
-
-
+h1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
 
 .header-image {
-	position: relative; 
-	width: 100%;
-	z-index:-1;
-	padding-bottom: 30px
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  padding-bottom: 30px;
+}
+.temp-image {
+  position: left;
+}
+.info-image {
+  position: left;
 }
 
-h1 span { 
-	color: white; 
-	font: bold 24px/45px Helvetica, Sans-Serif; 
-	letter-spacing: -1px;  
-	background: none;
-	text-align: center;
-	font-size: 100px;
-	font-family: 'Bodoni Moda', serif;
-margin-bottom: 30px;
+h1 span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: none;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Bodoni Moda", serif;
+  margin-bottom: 30px;
+}
 
-	
- }
-
- .navbar {
-color: whitesmoke !important;
-background-color: rgb(197,58,36);
-font-family: 'Bodoni Moda', serif;
-display: flex;
-justify-content: space-around;
-text-decoration-color: whitesmoke;
-height: 40px;
-padding-top: 30px;
-width: auto;
-
-
- }
- .nav a {
-	color: whitesmoke;
-	text-decoration: none; 
-	font-size: 20px;
- }
- .text {
-	color: black;
-	text-align: center
-	
-
-}	
+.navbar {
+  color: whitesmoke !important;
+  background-color: rgb(197, 58, 36);
+  font-family: "Bodoni Moda", serif;
+  display: flex;
+  justify-content: space-around;
+  text-decoration-color: whitesmoke;
+  height: 40px;
+  padding-top: 30px;
+  width: auto;
+}
+.nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+}
+.text {
+  color: black;
+  text-align: center;
+}
 
 .feature_divider {
-    width: 100%;
-    margin-bottom: 20px;
-    display: block;
-    border: 0;
-    border-color: #aaaaaa;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+  border: 0;
+  border-color: #aaaaaa;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 .bold-text {
-	font-weight: bold;
-	font-size:40px;
-	
-	
-
+  font-weight: bold;
+  font-size: 40px;
 }
 
-  
-  .column img {
-	margin-top: 8px;
-	vertical-align: middle;
-  }
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 
-  .c-image {
-	/* margin-top: 8px; */
-	vertical-align: middle;
-	object-fit: fill;
-	width: 400px;
-	height: 300px;
-	justify-content: space-between;
-	margin: 20px 20px 20px 20px;
-  }
-  .c-image:hover {
-	opacity: 1.0;
-	filter: alpha(opacity=100);
-  }
-  .column {
-	  display: flex;
-	  flex: 50%;
-	  padding: 0 4px;
-	  
-	 
+.c-image {
+  position: relative;
+  vertical-align: middle;
+  object-fit: fill;
+  width: 400px;
+  height: 300px;
+  justify-content: space-between;
+  margin: 20px 20px 20px 20px;
+}
+.box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
 
-  }
+.column {
+  display: flex;
+  flex: 50%;
+  padding: 0 4px;
+}
 
-  .row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-	margin: 20px 20px 20px 20px;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 20px 20px 20px 20px;
+}
