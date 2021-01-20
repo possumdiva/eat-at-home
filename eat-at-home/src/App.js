@@ -6,7 +6,6 @@ import About from "./components/About";
 import Groceries from "./components/Groceries";
 import Kits from "./components/Kits";
 import Meals from "./components/Meals";
-import Ratings from "./components/Ratings";
 import Reviews from "./components/Reviews";
 import Favorites from "./components/Favorites";
 import Home from "./components/Home";
@@ -25,7 +24,6 @@ class App extends Component {
               <Route path="/meals" component={Meals} />
               <Route path="/kits" component={Kits} />
               <Route path="/groceries" component={Groceries} />
-              <Route path="/ratings" component={Ratings} />
               <Route path="/reviews" component={Reviews} />
               <Route path="/favorites" component={Favorites} />
               <Route path="/comptemp" component={CompTemp} />

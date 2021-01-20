@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
 const Rating = (props) => {
+
   const [rating, setRating] = useState(props.rating);
+  
 
   return (
     <div>
