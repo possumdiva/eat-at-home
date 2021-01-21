@@ -9,9 +9,7 @@ function Profile() {
   return (
     <div classname="main">
       <NavBar />
-      <h1>
-        <span class="main-title">Our Team</span>
-      </h1>
+
       <div class="header-image" alt=""></div>
       <div class="row">
         <div class="column">

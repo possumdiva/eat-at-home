@@ -10,6 +10,7 @@ import Reviews from "./components/Reviews";
 import Favorites from "./components/Favorites";
 import Home from "./components/Home";
 import CompTemp from "./components/CompTemp";
+import Ratings from "./components/Rating";
 
 class App extends Component {
   render() {
@@ -21,8 +22,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/profile" component={Profile} />
               <Route path="/about" component={About} />
-              <Route path="/meals" component={Meals} />
-              <Route path="/kits" component={Kits} />
+              <Route path="/ratings" component={Ratings} />
               <Route path="/groceries" component={Groceries} />
               <Route path="/reviews" component={Reviews} />
               <Route path="/favorites" component={Favorites} />

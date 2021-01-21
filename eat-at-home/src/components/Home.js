@@ -4,14 +4,15 @@ import { NavBar } from "./NavBar";
 import image from "./images/Header.jpeg";
 import Meals from "./Meals";
 import Kits from "./Kits";
+import Groceries from "./Groceries";
 
 function Home() {
   return (
     <div classname="main">
       <NavBar />
-      <h1>
+      <h2>
         <span>EAT @ HOME</span>
-      </h1>
+      </h2>
       <div class="header-image">
         <img src={image} alt="header"></img>
       </div>
@@ -42,12 +43,11 @@ function Home() {
       </div>
       <div class="feature-divider"></div>
       <hr size="2" width="600px" color="black"></hr>
-      <h1>
-        <span>Meal Delivery</span>
-      </h1>
 
       <Meals />
+      <div class="feature-divider"></div>
       <Kits />
+      <Groceries />
     </div>
   );
 }
