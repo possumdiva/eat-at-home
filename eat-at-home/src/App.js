@@ -22,9 +22,9 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/profile" component={Profile} />
               <Route path="/about" component={About} />
-              <Route path="/meals" component={Meals} />
+              {/* <Route path="/meals" component={Meals} />
               <Route path="/kits" component={Kits} />
-              <Route path="/groceries" component={Groceries} />
+              <Route path="/groceries" component={Groceries} /> */}
               <Route path="/ratings" component={Ratings} />
               <Route path="/reviews" component={Reviews} />
               <Route path="/favorites" component={Favorites} />
