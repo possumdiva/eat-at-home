@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
+
 // import eahServer from '../api/eah-server';
 
 const Rating = (props) => {
+  const [rating, setRating] = useState(props.rating);
 
-  const [rating, setRating] = useState(props.rating);  
-  
-  
   // async function theResponse(rating) {
   //   console.log(rating);
   //   try {
   //     const response = await eahServer.post('/api/rating', {
-        
+
   //     })
   //   }
   // }
-  
+
   // theResponse(rating);
 
   return (
