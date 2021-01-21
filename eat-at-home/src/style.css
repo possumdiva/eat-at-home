@@ -1,4 +1,5 @@
 @import url(https://fonts.google.com/specimen/Bodoni+Moda?preview.text=EAT%20@%20HOME&preview.text_type=custom&sidebar.open=true&selection.family=Bodoni+Moda);
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
 body {
   background-color: antiquewhite;
   width: auto;
@@ -9,7 +10,16 @@ h1 {
   left: 0;
   width: 100%;
   text-align: center;
-  padding-top: 30px;
+  background-color: rgb(197, 58, 36);
+}
+h2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Bodoni Moda", serif;
+  font-size: 100px;
 }
 
 .header-image {
@@ -34,6 +44,7 @@ h1 span {
   font-size: 100px;
   font-family: "Bodoni Moda", serif;
   margin-bottom: 30px;
+  background-color: rgb(197, 58, 36);
 }
 
 .navbar {
@@ -93,17 +104,32 @@ h1 span {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: rgb(197, 58, 36);
+}
+
+.page-title {
+  height: 60px;
+  width: 300px;
+  color: black;
+  font-family: "Bodoni Moda", serif;
+  font-size: 40px;
+  padding: 30px;
+  margin-bottom: 0px 20px 20px 20px;
 }
 
 .column {
   display: flex;
   flex: 50%;
-  padding: 0 4px;
+  /* padding: 0 4px; */
+  margin: 0px 20px 0px 0px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 50px 4px;
   margin: 20px 20px 20px 20px;
 }

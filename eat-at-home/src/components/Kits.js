@@ -1,6 +1,6 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
-import { NavBar } from './NavBar';
+import { InfoTile } from "./InfoTile";
+import { Data } from "./RenderComp";
 import image1 from "./images/Kits/KitPic1.jpeg";
 import image2 from "./images/Kits/KitPic2.jpeg";
 import image3 from "./images/Kits/KitPic3.jpeg";
@@ -14,45 +14,99 @@ import image10 from "./images/Kits/KitPic10.jpeg";
 import image11 from "./images/Kits/KitPic11.jpeg";
 import image12 from "./images/Kits/KitPic12.jpeg";
 
-
 function Kits() {
-    return (
-      <div classname="main">
-      <NavBar />
-      <h1><span>Meal Kit Delivery</span></h1>
-      <div class="header-image" alt="">
-      </div> 
-      <div class="row">
-  <div class="column">
-    <div class="c-image"><img src={ image1 } ></img></div>
-    <div class="c-image"><img src={ image2 } ></img></div>
-    <div class="c-image"><img src={ image3 } ></img></div>
-  </div>
-  
-  <div class="column">
-    <div class="c-image"><img src={ image4 } ></img></div>
-    <div class="c-image"><img src={ image5 } ></img></div>
-    <div class="c-image"><img src={ image6 } ></img></div>
-  
-  </div>
-  
-  <div class="column">
-    <div class="c-image"><img src={ image7 } ></img></div>
-    <div class="c-image"><img src={ image8 } ></img></div>
-    <div class="c-image"><img src={ image9 } ></img></div>
-  </div>
-
-  <div class="column">
-    <div class="c-image"><img src={ image10 } ></img></div>
-    <div class="c-image"><img src={ image11} ></img></div>
-    <div class="c-image"><img src={ image12} ></img></div>
-    
-  </div>
+  return (
+    <div classname="main">
+      <div class="page-title">
+        <h1>Meal Kits</h1>
       </div>
-      </div> 
-        
-    );
-}
+      <div class="row">
+        <div class="column">
+          <InfoTile
+            image={image1}
+            ID={Data.Mkits[0].ID}
+            BizName={Data.Mkits[0].BizName}
+            Options={Data.Mkits[0].Options}
+          />
+          <InfoTile
+            image={image2}
+            ID={Data.Mkits[1].ID}
+            BizName={Data.Mkits[1].BizName}
+            Options={Data.Mkits[1].Options}
+          />
+          <InfoTile
+            image={image3}
+            ID={Data.Mkits[2].ID}
+            BizName={Data.Mkits[2].BizName}
+            Options={Data.Mkits[2].Options}
+          />
+        </div>
 
+        <div class="column">
+          <InfoTile
+            image={image4}
+            ID={Data.Mkits[3].ID}
+            BizName={Data.Mkits[3].BizName}
+            Options={Data.Mkits[3].Options}
+          />
+          <InfoTile
+            image={image5}
+            ID={Data.Mkits[4].ID}
+            BizName={Data.Mkits[4].BizName}
+            Options={Data.Mkits[4].Options}
+          />
+          <InfoTile
+            image={image6}
+            ID={Data.Mkits[5].ID}
+            BizName={Data.Mkits[5].BizName}
+            Options={Data.Mkits[5].Options}
+          />
+        </div>
+
+        <div class="column">
+          <InfoTile
+            image={image7}
+            ID={Data.Mkits[6].ID}
+            BizName={Data.Mkits[6].BizName}
+            Options={Data.Mkits[6].Options}
+          />
+          <InfoTile
+            image={image8}
+            ID={Data.Mkits[7].ID}
+            BizName={Data.Mkits[7].BizName}
+            Options={Data.Mkits[7].Options}
+          />
+          <InfoTile
+            image={image9}
+            ID={Data.Mkits[8].ID}
+            BizName={Data.Mkits[8].BizName}
+            Options={Data.Mkits[8].Options}
+          />
+        </div>
+
+        <div class="column">
+          <InfoTile
+            image={image10}
+            ID={Data.Mkits[9].ID}
+            BizName={Data.Mkits[9].BizName}
+            Options={Data.Mkits[9].Options}
+          />
+          <InfoTile
+            image={image11}
+            ID={Data.Mkits[10].ID}
+            BizName={Data.Mkits[10].BizName}
+            Options={Data.Mkits[10].Options}
+          />
+          <InfoTile
+            image={image12}
+            ID={Data.Mkits[11].ID}
+            BizName={Data.Mkits[11].BizName}
+            Options={Data.Mkits[11].Options}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default Kits;
