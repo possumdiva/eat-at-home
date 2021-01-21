@@ -1,6 +1,4 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
-import { NavBar } from "./NavBar";
 import { InfoTile } from "./InfoTile";
 import { Data } from "./RenderComp";
 import image1 from "./images/meals/MealPic1.jpeg";

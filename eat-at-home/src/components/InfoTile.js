@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import StyleTile from "./StyleTile";
 
 export const InfoTile = (props) => {
   const handleClick = (bizID) => {
