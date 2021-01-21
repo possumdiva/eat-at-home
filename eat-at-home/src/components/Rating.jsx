@@ -1,12 +1,26 @@
 import React, { useState } from "react";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
+// import eahServer from '../api/eah-server';
 
 const Rating = (props) => {
-  const [rating, setRating] = useState(props.rating);
+
+  const [rating, setRating] = useState(props.rating);  
+  
+  
+  // async function theResponse(rating) {
+  //   console.log(rating);
+  //   try {
+  //     const response = await eahServer.post('/api/rating', {
+        
+  //     })
+  //   }
+  // }
+  
+  // theResponse(rating);
 
   return (
     <div>
-      <h1>Rating:{rating}</h1>
+      {/* <h1>Rating:{rating}</h1> */}
       <div style={styles.starStyle}>
         {rating >= 1 ? (
           <IoIosStar size={32} onClick={() => setRating(1)} />
