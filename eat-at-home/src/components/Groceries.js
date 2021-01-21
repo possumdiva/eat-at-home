@@ -1,6 +1,7 @@
 import React from "react";
 // import { Link } from 'react-router-dom';
-import { NavBar } from './NavBar';
+import { NavBar } from "./NavBar";
+import { InfoTile } from "./InfoTile";
 import image1 from "./images/Groceries/GrocerPic1.jpeg";
 import image2 from "./images/Groceries/GrocerPic2.jpeg";
 import image3 from "./images/Groceries/GrocerPic3.jpeg";
@@ -14,45 +15,59 @@ import image10 from "./images/Groceries/GrocerPic10.jpeg";
 import image11 from "./images/Groceries/GrocerPic11.jpeg";
 import image12 from "./images/Groceries/GrocerPic12.jpeg";
 
-
 function Groceries() {
-    return (
-      <div classname="main">
+  return (
+    <div classname="main">
       <NavBar />
-      <h1><span>Groceries Delivery</span></h1>
-      <div class="header-image" alt="">
-      </div> 
+      <div class="header-image" alt=""></div>
       <div class="row">
-  <div class="column">
-    <div class="c-image"><img src={ image1 } ></img></div>
-    <div class="c-image"><img src={ image2 } ></img></div>
-    <div class="c-image"><img src={ image3 } ></img></div>
-  </div>
-  
-  <div class="column">
-    <div class="c-image"><img src={ image4 } ></img></div>
-    <div class="c-image"><img src={ image5 } ></img></div>
-    <div class="c-image"><img src={ image6 } ></img></div>
-  
-  </div>
-  
-  <div class="column">
-    <div class="c-image"><img src={ image7 } ></img></div>
-    <div class="c-image"><img src={ image8 } ></img></div>
-    <div class="c-image"><img src={ image9 } ></img></div>
-  </div>
+        <div class="column">
+          <InfoTile image={image1} />
+          <InfoTile image={image2} />
 
-  <div class="column">
-    <div class="c-image"><img src={ image10 } ></img></div>
-    <div class="c-image"><img src={ image11} ></img></div>
-    <div class="c-image"><img src={ image12} ></img></div>
-    
-  </div>
+          <div class="c-image">
+            <img src={image3}></img>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="c-image">
+            <img src={image4}></img>
+          </div>
+          <div class="c-image">
+            <img src={image5}></img>
+          </div>
+          <div class="c-image">
+            <img src={image6}></img>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="c-image">
+            <img src={image7}></img>
+          </div>
+          <div class="c-image">
+            <img src={image8}></img>
+          </div>
+          <div class="c-image">
+            <img src={image9}></img>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="c-image">
+            <img src={image10}></img>
+          </div>
+          <div class="c-image">
+            <img src={image11}></img>
+          </div>
+          <div class="c-image">
+            <img src={image12}></img>
+          </div>
+        </div>
       </div>
-      </div> 
-        
-    );
+    </div>
+  );
 }
-
 
 export default Groceries;
