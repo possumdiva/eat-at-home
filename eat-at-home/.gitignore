@@ -31,3 +31,8 @@ yarn-error.log*
 ../node_modules/
 **/.history
 development
+
+.eslintcache
+../.eslintcache
+../../.eslintcache
+eat-at-home./eslintcache
