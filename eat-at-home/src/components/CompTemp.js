@@ -4,6 +4,7 @@ import { NavBar } from "./NavBar";
 import image1 from "./images/Kits/KitPic1.jpeg";
 import Rating from "./Rating.jsx";
 import Stars from "./StarRating";
+import SaveButton from './SaveButton'
 import Reviews from "./Reviews";
 import eahServer from "../api/eah-server";
 import { Data } from "./RenderComp.js";
@@ -22,7 +23,8 @@ class CompTemp extends React.Component {
       reviewerIDs: [],
       bizID: this.props.location.state.bizID,
       theBiz: {},
-      userID: 1
+      userID: 1,
+      savedToggle: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -60,7 +62,8 @@ class CompTemp extends React.Component {
       }
       this.setState({ userReviews: allReviews });
       // WRITE CODE HERE TO SET USERREVIEW LABEL
-    } catch (err) {
+      } 
+    catch (err) {
       console.log(`There was an error loading ratings from the server: ${err}`);
     }
   }
@@ -113,7 +116,7 @@ class CompTemp extends React.Component {
         <h4>{BizName}</h4>
         <div class="compTemp-items">
           <img class="compTemp-image" src={image1} />
-
+          <SaveButton userID={this.state.userID} companyID={this.state.bizID}/>
           <a class="compTemp-main-heading" href={link}></a>
           <div class="rating-stars">
             <Stars userID={this.state.userID} companyID={this.state.bizID} />
