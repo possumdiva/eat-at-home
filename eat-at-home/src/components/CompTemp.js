@@ -133,6 +133,7 @@ class CompTemp extends React.Component {
                 <Reviews userID={review.user_id} reviewText={review.review} />
               ))}
             </div>
+            <button className="button">Save</button>
           </div>
         </div>
       </div>

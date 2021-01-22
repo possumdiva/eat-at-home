@@ -92,9 +92,10 @@ h1 span {
   text-align: center;
 }
 .info-text {
-  padding-left: 30px;
+  padding-left: 10px;
   width: 600px;
   text-align: left;
+  padding-right: 30px;
 }
 .bold-text {
   font-weight: bold;
@@ -169,6 +170,7 @@ h1 span {
 .compTemp-items {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .rating-stars {
@@ -190,13 +192,8 @@ h1 span {
   height: 200px;
   width: 400px;
 }
-
-.html body main {
-  max-width: 1200px;
-  margin: 0;
-}
-
-head {
-  max-width: 1200px;
-  margin: 0;
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
