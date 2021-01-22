@@ -25,7 +25,6 @@ class App extends Component {
               <Route path="/ratings" component={Ratings} />
               <Route path="/groceries" component={Groceries} />
               <Route path="/reviews" component={Reviews} />
-              <Route path="/favorites" component={Favorites} />
               <Route path="/comptemp" component={CompTemp} />
             </Switch>
           </Router>
