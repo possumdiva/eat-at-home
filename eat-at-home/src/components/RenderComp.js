@@ -257,7 +257,7 @@ export const Data = {
         "Fight food waste with organic produce and sustainably sourced pantry staples delivered to your door—up to 40% off grocery store prices. The smaller starter box, which is called Mischief, includes about 10–13 pounds (4.5–6 kg) of organic produce each week, or enough for 2 people. Meanwhile, the Madness box is designed for larger households and families. It contains 18–22 pounds (8–10 kg) of produce, which serves up to 5 people per week. A list of produce that may be included in upcoming boxes is available on the website. You customize your weekly box based on your preferences or receive a variety of seasonal items selected for you. ",
       Pricing: "$22.00 - $35.00 per week - shipping not included",
       Image: "",
-      Options: "Organic, Produce only",
+      Options: "Organic, Produce amd Products",
     },
     {
       BizName: "Hungry Root",
