@@ -3,6 +3,7 @@ import axios from "axios";
 import { NavBar } from "./NavBar";
 import image1 from "./images/Kits/KitPic1.jpeg";
 import Rating from "./Rating.jsx";
+import Stars from "./StarRating";
 import Reviews from "./Reviews";
 import eahServer from "../api/eah-server";
 import { Data } from "./RenderComp.js";
@@ -96,12 +97,10 @@ class CompTemp extends React.Component {
       bizCategory = "Mkits"
     }
     const bizGroup = Data[bizCategory];
-    console.log(bizGroup);
     const theBizArray = bizGroup.filter(biz => {
       return biz.ID === bizID
     });
     const theBiz = theBizArray[0];
-    console.log(theBiz);
     const BizName = theBiz.BizName;
     const link = theBiz.link;
     const Description = theBiz.Description;
@@ -110,13 +109,14 @@ class CompTemp extends React.Component {
     return (
       <div>
         <NavBar />
+        {/* <h1><a href="http://localhost:3000/auth/github">Login</a></h1> */}
         <h4>{BizName}</h4>
         <div class="compTemp-items">
           <img class="compTemp-image" src={image1} />
 
           <a class="compTemp-main-heading" href={link}></a>
           <div class="rating-stars">
-            <Rating userID={this.state.userID} companyID={this.state.bizID} />
+            <Stars userID={this.state.userID} companyID={this.state.bizID} />
           </div>
           <h3>Average Using Rating: {this.state.averageRating}</h3>
           <h3>Description:</h3>
