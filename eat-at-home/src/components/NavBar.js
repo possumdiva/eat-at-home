@@ -6,6 +6,6 @@ export const NavBar = () => (
     <Link to="/">Home</Link>
     <Link to="/about">About</Link>
     <Link to="/profile">Profile</Link>
-    <Link to="/comptemp">Companies</Link>
+    {/* <Link to="/comptemp">Companies</Link> */}
   </div>
 );
