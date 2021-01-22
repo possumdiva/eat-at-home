@@ -5,6 +5,7 @@ import image1 from "./images/Kits/KitPic1.jpeg";
 import Rating from "./Rating.jsx";
 import Reviews from "./Reviews";
 import eahServer from "../api/eah-server";
+import { Data } from "./RenderComp.js";
 
 class CompTemp extends React.Component {
   constructor(props) {
@@ -16,9 +17,11 @@ class CompTemp extends React.Component {
       myReview: "",
       averageRating: null,
       userReviews: [],
+      userReviewLabel: "",
       reviewerIDs: [],
       bizID: this.props.location.state.bizID,
-      userID: "1",
+      theBiz: {},
+      userID: 1
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,16 +29,14 @@ class CompTemp extends React.Component {
   }
 
   async componentDidMount() {
-    console.log("this is the info" + this.state.bizID);
     try {
-      const response = await eahServer.get("/api/comp/review/1");
+      const theURL = "/api/comp/review/" + this.state.bizID;
+      const response = await eahServer.get(theURL);
       const rawData = response.data;
       let allRatings = [];
       let allReviews = [];
       rawData.forEach((element) => {
         if (element.user_id === this.state.userID) {
-          console.log("found my review: " + element.review);
-
           this.setState({ myReview: element.review });
         }
       });
@@ -51,9 +52,13 @@ class CompTemp extends React.Component {
         sum += num;
       });
       let theAverage = sum / allRatings.length;
-      this.setState({ averageRating: theAverage });
+      if (theAverage) {
+        this.setState({ averageRating: theAverage + ' out of 5'});
+      } else {
+        this.setState({ averageRating: 'No Average Rating Yet'})
+      }
       this.setState({ userReviews: allReviews });
-      console.log(this.state.userReviews);
+      // WRITE CODE HERE TO SET USERREVIEW LABEL
     } catch (err) {
       console.log(`There was an error loading ratings from the server: ${err}`);
     }
@@ -72,6 +77,7 @@ class CompTemp extends React.Component {
       review: this.state.currentReview,
     });
     if (response.ok) this.setState({ submitProcessing: false });
+    this.setState({ myReview: this.state.currentReview});
     this.setState({ currentReview: "" });
   };
 
@@ -80,13 +86,27 @@ class CompTemp extends React.Component {
   };
 
   render() {
-    const BizName = "Freshly";
-    const link = "https://www.freshly.com/";
-    const ID = 1;
-    const Description =
-      "Freshly meals come individually packaged and portioned, so these work well for single folks or couples without kids. They are assembled much like TV dinners but are far more attractive and -- spoiler alert -- they taste better too. Freshly meals arrive very cold but not quite frozen, so it's up to you to heat and eat them right away or freeze a few meals for a rainy day. (Note: Some foods freeze much better than others, I found). Through the website, you can choose a subscription plan that includes as few as four or as many as 12 meals per week. Freshly has plenty of healthy meal choices and options for folks with dietary restrictions, including gluten-free, low-carb and low-calorie. There are, however, almost no plant-based options so this is not a good meal delivery service for vegetarians or vegans. Freshly ships to every state in the lower 48 (sorry, Hawaii and Alaska!) and you can also change, pause or cancel your plan anytime, so it's very low risk if you just want to check it out for a week or two.";
-    const Pricing = "$46.00 - $102.00 per week - shipping not included";
-    const Options = "Gluten-free";
+    const bizID = this.state.bizID;
+    let bizCategory = "";
+    if (bizID <= 12) {
+      bizCategory = "Meals"
+    } else if (bizID >= 24) {
+      bizCategory = "produce"
+    } else {
+      bizCategory = "Mkits"
+    }
+    const bizGroup = Data[bizCategory];
+    console.log(bizGroup);
+    const theBizArray = bizGroup.filter(biz => {
+      return biz.ID === bizID
+    });
+    const theBiz = theBizArray[0];
+    console.log(theBiz);
+    const BizName = theBiz.BizName;
+    const link = theBiz.link;
+    const Description = theBiz.Description;
+    const Pricing = theBiz.Pricing;
+    const Options = theBiz.Options;
     return (
       <div>
         <NavBar />
@@ -98,7 +118,7 @@ class CompTemp extends React.Component {
           <div class="rating-stars">
             <Rating userID={this.state.userID} companyID={this.state.bizID} />
           </div>
-          <h3>Average Using Rating: {this.state.averageRating} / 5</h3>
+          <h3>Average Using Rating: {this.state.averageRating}</h3>
           <h3>Description:</h3>
           <div class="info-text">
             <p class="info-text">{Description}</p>{" "}
@@ -124,7 +144,7 @@ class CompTemp extends React.Component {
             </div>
           </form>
           <div>
-            <h3>Your Review:</h3>
+            <h5>Your Review:</h5>
             <p>{this.state.myReview}</p>
           </div>
           <div>
