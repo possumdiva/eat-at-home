@@ -116,47 +116,45 @@ class CompTemp extends React.Component {
         <h4>{BizName}</h4>
         <div class="compTemp-items">
           <img class="compTemp-image" src={image1} />
-          <div>
-            <SaveButton userID={this.state.userID} companyID={this.state.bizID}/>
-            <a class="compTemp-main-heading" href={link}></a>
-            <div class="rating-stars">
-              <Rating userID={this.state.userID} companyID={this.state.bizID} />
+          <SaveButton userID={this.state.userID} companyID={this.state.bizID}/>
+          <a class="compTemp-main-heading" href={link}></a>
+          {/* <div class="rating-stars">
+            <Stars userID={this.state.userID} companyID={this.state.bizID} />
+          </div> */}
+          {/* <h3>Average Using Rating: {this.state.averageRating}</h3> */}
+          <h3>Description:</h3>
+          <div class="info-text">
+            <p class="info-text">{Description}</p>{" "}
+          </div>
+          <h3>Pricing:</h3>
+          <p class="info-text">{Pricing}</p>
+          <h3>Options:</h3>
+          <p class="info-text">{Options}</p>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              <h3>Write Your Own Review:</h3>
+            </label>
+            <div class="review-box">
+              <textarea
+                class="box"
+                value={this.state.currentReview}
+                onChange={this.handleChange}
+                placeholder="Write Your Own Review"
+              />
             </div>
-            <h3>Average Using Rating: {this.state.averageRating} / 5</h3>
-            <h3>Description:</h3>
             <div class="info-text">
-              <p class="info-text">{Description}</p>{" "}
+              <button class="button">Submit</button>
             </div>
-            <h3>Pricing:</h3>
-            <p class="info-text">{Pricing}</p>
-            <h3>Options:</h3>
-            <p class="info-text">{Options}</p>
-            <form onSubmit={this.handleSubmit}>
-              <label>
-                <h3>Write Your Own Review:</h3>
-              </label>
-              <div class="review-box">
-                <textarea
-                  class="box"
-                  value={this.state.currentReview}
-                  onChange={this.handleChange}
-                  placeholder="Write Your Own Review"
-                />
-              </div>
-              <div class="info-text">
-                <button class="button">Submit</button>
-              </div>
-            </form>
-            <div>
-              <h3>Your Review:</h3>
-              <p>{this.state.myReview}</p>
-            </div>
-            <div>
-              <h3>User Reviews</h3>
-              {this.state.userReviews.map((review) => (
-                <Reviews userID={review.user_id} reviewText={review.review} />
-              ))}
-            </div>
+          </form>
+          <div>
+            <h5>Your Review:</h5>
+            <p>{this.state.myReview}</p>
+          </div>
+          <div>
+            <h3>User Reviews</h3>
+            {this.state.userReviews.map((review) => (
+              <Reviews userID={review.user_id} reviewText={review.review} />
+            ))}
           </div>
         </div>
       </div>
