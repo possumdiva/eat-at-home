@@ -32,6 +32,6 @@ yarn-error.log*
 **/.history
 development
 
-.eslintcache
-.eslintcache.orig
+.eslintcache*
+
 

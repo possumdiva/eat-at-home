@@ -114,12 +114,12 @@ class CompTemp extends React.Component {
 
         <h4>{BizName}</h4>
 
-        <div class="compTemp-items">
-          <img class="compTemp-image" src={image1} />
+        <div className="compTemp-items">
+          <img className="compTemp-image" src={image1} />
           <SaveButton userID={this.state.userID} companyID={this.state.bizID} />
           <div>
             <a className="compTemp-main-heading" href={link}></a>
-            <div class="rating-stars">
+            <div className="rating-stars">
               <Rating userID={this.state.userID} companyID={this.state.bizID} />
               <Stars userID={this.state.userID} companyID={this.state.bizID} />
             </div>
@@ -138,14 +138,14 @@ class CompTemp extends React.Component {
               </label>
               <div className="review-box">
                 <textarea
-                  class="box"
+                  className="box"
                   value={this.state.currentReview}
                   onChange={this.handleChange}
                   placeholder="Write Your Own Review"
                 />
               </div>
               <div className="info-text">
-                <button class="button">Submit</button>
+                <button className="button">Submit</button>
               </div>
               <button className="button">Save</button>
             </form>
