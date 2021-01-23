@@ -113,8 +113,9 @@ class CompTemp extends React.Component {
         <NavBar />
 
         <h4>{BizName}</h4>
-        <div className="compTemp-items">
-          <img className="compTemp-image" src={image1} />
+
+        <div class="compTemp-items">
+          <img class="compTemp-image" src={image1} />
           <SaveButton userID={this.state.userID} companyID={this.state.bizID} />
           <div>
             <a className="compTemp-main-heading" href={link}></a>

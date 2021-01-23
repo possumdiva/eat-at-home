@@ -4,7 +4,7 @@ import image from "./images/Team/banana.jpeg";
 
 function Profile() {
   return (
-    <div classname="main">
+    <div className="main">
       <NavBar />
       <div className="profile-items">
         <div className="row">
