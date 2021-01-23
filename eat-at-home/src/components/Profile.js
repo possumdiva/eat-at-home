@@ -9,7 +9,7 @@ function Profile() {
   return (
     <div classname="main">
       <NavBar />
-
+      <button>Logout</button>
       <div class="header-image" alt=""></div>
       <div class="row">
         <div class="column">

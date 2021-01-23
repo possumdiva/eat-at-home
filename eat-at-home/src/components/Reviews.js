@@ -4,7 +4,7 @@ import React from "react";
 function Reviews(props) {
     return (
         <div className="userReviews">
-            <h4>Review by User ID# {props.userID}</h4>
+            <h5>Review by User # {props.userID}</h5>
             <p>{props.reviewText}</p>
         </div >
     );
