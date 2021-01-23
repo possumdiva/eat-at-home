@@ -8,15 +8,17 @@ import image4 from "./images/Groceries/GrocerPic4.jpeg";
 import image5 from "./images/Groceries/GrocerPic5.jpeg";
 import image6 from "./images/Groceries/GrocerPic6.jpeg";
 import image7 from "./images/Groceries/GrocerPic7.jpeg";
+import image8 from "./images/Groceries/GrocerPic8.jpeg";
+import image9 from "./images/Groceries/GrocerPic9.jpeg";
 
 function Groceries() {
   return (
-    <div classname="main">
-      <div class="page-title">
+    <div className="main">
+      <div className="page-title">
         <h1>Groceries</h1>
       </div>
-      <div class="row">
-        <div class="column">
+      <div className="row">
+        <div className="column">
           <InfoTile
             image={image1}
             ID={Data.produce[0].ID}
@@ -37,7 +39,7 @@ function Groceries() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image4}
             ID={Data.produce[3].ID}
@@ -58,9 +60,21 @@ function Groceries() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image7}
+            ID={Data.produce[6].ID}
+            BizName={Data.produce[6].BizName}
+            Options={Data.produce[6].Options}
+          />
+          <InfoTile
+            image={image8}
+            ID={Data.produce[6].ID}
+            BizName={Data.produce[6].BizName}
+            Options={Data.produce[6].Options}
+          />
+          <InfoTile
+            image={image9}
             ID={Data.produce[6].ID}
             BizName={Data.produce[6].BizName}
             Options={Data.produce[6].Options}

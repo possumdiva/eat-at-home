@@ -17,7 +17,7 @@ import image12 from "./images/meals/MealPic12.jpeg";
 function Meals() {
   return (
     <div classname="main">
-      <div class="page-title">
+      <div className="page-title">
         <h1>Meals</h1>
       </div>
       <div class="row">
@@ -43,7 +43,7 @@ function Meals() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image4}
             ID={Data.Meals[3].ID}
@@ -64,7 +64,7 @@ function Meals() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image7}
             ID={Data.Meals[6].ID}
@@ -85,7 +85,7 @@ function Meals() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image10}
             ID={Data.Meals[9].ID}
