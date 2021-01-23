@@ -111,16 +111,16 @@ class CompTemp extends React.Component {
     return (
       <div>
         <NavBar />
-        {/* <h1><a href="http://localhost:3000/auth/github">Login</a></h1> */}
+
         <h4>{BizName}</h4>
         <div class="compTemp-items">
           <img class="compTemp-image" src={image1} />
           <SaveButton userID={this.state.userID} companyID={this.state.bizID} />
           <a class="compTemp-main-heading" href={link}></a>
-          {/* <div class="rating-stars">
+          <div class="rating-stars">
             <Stars userID={this.state.userID} companyID={this.state.bizID} />
-          </div> */}
-          {/* <h3>Average Using Rating: {this.state.averageRating}</h3> */}
+          </div>
+          <h3>Average Using Rating: {this.state.averageRating}</h3>
           <h3>Description:</h3>
           <div class="info-text">
             <p class="info-text">{Description}</p>{" "}

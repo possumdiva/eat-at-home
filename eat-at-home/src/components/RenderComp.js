@@ -19,7 +19,7 @@ export const Data = {
         "The service's plans range from four meals a week to 18 meals a week, so you can pick one that best fits your schedule and preferences. If you just need a quick and nutritious supplement to your regular meal routine, the four, six, or eight meal-plan will be best. The 12 or 18-meal plans are good if you don't plan on cooking most of the week. The cost per meal goes down as the number of meals goes up — it's $15 per meal for the four-meal plan versus $11 per meal for the 18-meal plan. Factor 75 updates its menu every week. There are breakfast, lunch, and dinner options and you can filter by different nutritional needs such as paleo, keto, and plant-based. There are also add-ons under the factor category, including healthy desserts, soups, and cold-pressed juices for an additional cost. Meals are always delivered on Monday, Tuesday, or Wednesday depending on your zip code. They're shipped in insulated boxes with cold gel packs, and you can store them in the fridge for up to seven days. Whenever you're ready to eat, just heat the tray up in the microwave or oven.",
       Pricing: "$48.00 - $108.00 per week - FREE SHIPPING",
       Image: "MealPic2",
-      Options: "Gluten-Fress Paleo Vegan",
+      Options: "Gluten-Free Paleo Vegan",
     },
 
     {
@@ -52,7 +52,7 @@ export const Data = {
         "Southern and Asian Home Cooking Delivered. Subscribe for weekly deliveries or order a la carte. Mostly Southern. Mainly Asian. Primarily Organic. Always Delicious!",
       Pricing: "$48.00 minimum order - FREE SHIPPING",
       Image: "MealPic5",
-      Options: "Gluten-free, Vegan, Omnivore",
+      Options: "Gluten-free Vegan",
     },
 
     {
@@ -205,7 +205,7 @@ export const Data = {
         "After setting up an account and picking a delivery day, we were prompted to pick a plan. But picking a plan is quite confusing and not very flexible. Green Chef offers five plans and each costs a different price per serving.",
       Pricing: "$79.00 per week - FREE SHIPPING",
       Image: "KitPic8",
-      Options: "Vegan, Gluten-free, Omnivore, Paleo",
+      Options: "Vegan Gluten-free Paleo",
     },
     {
       BizName: "Daily Harvest",
