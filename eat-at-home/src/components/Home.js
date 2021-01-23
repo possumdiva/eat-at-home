@@ -13,12 +13,12 @@ function Home() {
       <h2>
         <span>EAT @ HOME</span>
       </h2>
-      <div class="header-image">
+      <div className="header-image">
         <img src={image} alt="header"></img>
       </div>
-      <div class="feature-divider"></div>
+      <div className="feature-divider"></div>
       <hr size="2" width="600px" color="black"></hr>
-      <div class="text">
+      <div className="text">
         <p>
           With so many of us eating at home these days, it can get exhausting
           trying to keep your meals tasty and exciting.
@@ -33,7 +33,7 @@ function Home() {
           that can help with that fatigue!
         </p>{" "}
         <p> From produce delivery to full meals </p>{" "}
-        <p class="bold-text">Eat @ Home</p>{" "}
+        <p className="bold-text">Eat @ Home</p>{" "}
         <p>
           {" "}
           provides a comprehensive collection of the best companies online to
@@ -41,11 +41,11 @@ function Home() {
         </p>{" "}
         <p>right to your doorstep!</p>
       </div>
-      <div class="feature-divider"></div>
+      <div className="feature-divider"></div>
       <hr size="2" width="600px" color="black"></hr>
 
       <Meals />
-      <div class="feature-divider"></div>
+      <div className="feature-divider"></div>
       <Kits />
       <Groceries />
     </div>

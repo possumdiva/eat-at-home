@@ -7,9 +7,9 @@ function Profile() {
     <div classname="main">
       <NavBar />
       <div className="profile-items">
-        <div class="row">
-          <div class="column">
-            <div class="c-image">
+        <div className="row">
+          <div className="column">
+            <div className="c-image">
               <img src={image}></img>
             </div>
             <button className="button">Logout</button>

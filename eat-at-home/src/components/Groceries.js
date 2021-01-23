@@ -11,12 +11,12 @@ import image7 from "./images/Groceries/GrocerPic7.jpeg";
 
 function Groceries() {
   return (
-    <div classname="main">
-      <div class="page-title">
+    <div className="main">
+      <div className="page-title">
         <h1>Groceries</h1>
       </div>
-      <div class="row">
-        <div class="column">
+      <div className="row">
+        <div className="column">
           <InfoTile
             image={image1}
             ID={Data.produce[0].ID}
@@ -37,7 +37,7 @@ function Groceries() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image4}
             ID={Data.produce[3].ID}
@@ -58,7 +58,7 @@ function Groceries() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image7}
             ID={Data.produce[6].ID}

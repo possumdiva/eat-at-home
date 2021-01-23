@@ -113,29 +113,29 @@ class CompTemp extends React.Component {
         <NavBar />
 
         <h4>{BizName}</h4>
-        <div class="compTemp-items">
-          <img class="compTemp-image" src={image1} />
+        <div className="compTemp-items">
+          <img className="compTemp-image" src={image1} />
           <SaveButton userID={this.state.userID} companyID={this.state.bizID} />
           <div>
-            <a class="compTemp-main-heading" href={link}></a>
+            <a className="compTemp-main-heading" href={link}></a>
             <div class="rating-stars">
               <Rating userID={this.state.userID} companyID={this.state.bizID} />
               <Stars userID={this.state.userID} companyID={this.state.bizID} />
             </div>
             <h3>Average Using Rating: {this.state.averageRating}</h3>
             <h3>Description:</h3>
-            <div class="info-text">
-              <p class="info-text">{Description}</p>{" "}
+            <div className="info-text">
+              <p className="info-text">{Description}</p>{" "}
             </div>
             <h3>Pricing:</h3>
-            <p class="info-text">{Pricing}</p>
+            <p className="info-text">{Pricing}</p>
             <h3>Options:</h3>
-            <p class="info-text">{Options}</p>
+            <p className="info-text">{Options}</p>
             <form onSubmit={this.handleSubmit}>
               <label>
                 <h3>Write Your Own Review:</h3>
               </label>
-              <div class="review-box">
+              <div className="review-box">
                 <textarea
                   class="box"
                   value={this.state.currentReview}
@@ -143,7 +143,7 @@ class CompTemp extends React.Component {
                   placeholder="Write Your Own Review"
                 />
               </div>
-              <div class="info-text">
+              <div className="info-text">
                 <button class="button">Submit</button>
               </div>
               <button className="button">Save</button>
