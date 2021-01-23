@@ -95,10 +95,12 @@ h1 span {
   text-align: center;
 }
 .info-text {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
   padding-left: 10px;
   width: 600px;
-  text-align: left;
-  padding-right: 30px;
+  text-align: right;
 }
 .bold-text {
   font-weight: bold;
@@ -135,13 +137,12 @@ h1 span {
   border-width: 6px;
   border-color: rgb(197, 58, 36);
 }
-.mouse-action:hover {
-  background-color: rgb(197, 58, 36, 0.5);
+.c-image img {
+  width: 300px;
+  margin: 20px;
+  padding: 30px;
 }
 
-.c-image img {
-  width: 100%;
-}
 .box-text {
   position: absolute;
   margin-top: 10px;
@@ -196,8 +197,6 @@ h1 span {
 .rating-stars {
   padding-left: 20px;
 }
-.companyItems {
-}
 
 .button {
   background-color: rgb(197, 58, 36);
@@ -214,8 +213,8 @@ h1 span {
 }
 .about {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
 }
 .profile-image {
   width: 100px;
@@ -226,4 +225,7 @@ h1 span {
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
+}
+.info-tile {
+  width: 150px;
 }

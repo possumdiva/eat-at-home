@@ -17,11 +17,11 @@ import image12 from "./images/meals/MealPic12.jpeg";
 function Meals() {
   return (
     <div classname="main">
-      <div className="page-title">
+      <div class="page-title">
         <h1>Meals</h1>
       </div>
-      <div className="row">
-        <div className="column">
+      <div class="row">
+        <div class="column">
           <InfoTile
             className="c-image"
             image={image1}
@@ -30,12 +30,14 @@ function Meals() {
             Options={Data.Meals[0].Options}
           />
           <InfoTile
+            className="c-image"
             image={image2}
             ID={Data.Meals[1].ID}
             BizName={Data.Meals[1].BizName}
             Options={Data.Meals[1].Options}
           />
           <InfoTile
+            className="c-image"
             image={image3}
             ID={Data.Meals[2].ID}
             BizName={Data.Meals[2].BizName}
@@ -43,20 +45,23 @@ function Meals() {
           />
         </div>
 
-        <div className="column">
+        <div class="column">
           <InfoTile
+            className="c-image"
             image={image4}
             ID={Data.Meals[3].ID}
             BizName={Data.Meals[3].BizName}
             Options={Data.Meals[3].Options}
           />
           <InfoTile
+            className="c-image"
             image={image5}
             ID={Data.Meals[4].ID}
             BizName={Data.Meals[4].BizName}
             Options={Data.Meals[4].Options}
           />
           <InfoTile
+            className="c-image"
             image={image6}
             ID={Data.Meals[5].ID}
             BizName={Data.Meals[5].BizName}
@@ -64,20 +69,23 @@ function Meals() {
           />
         </div>
 
-        <div className="column">
+        <div class="column">
           <InfoTile
+            className="c-image"
             image={image7}
             ID={Data.Meals[6].ID}
             BizName={Data.Meals[6].BizName}
             Options={Data.Meals[6].Options}
           />
           <InfoTile
+            className="c-image"
             image={image8}
             ID={Data.Meals[7].ID}
             BizName={Data.Meals[7].BizName}
             Options={Data.Meals[7].Options}
           />
           <InfoTile
+            className="c-image"
             image={image9}
             ID={Data.Meals[8].ID}
             BizName={Data.Meals[8].BizName}
@@ -85,20 +93,23 @@ function Meals() {
           />
         </div>
 
-        <div className="column">
+        <div class="column">
           <InfoTile
+            className="c-image"
             image={image10}
             ID={Data.Meals[9].ID}
             BizName={Data.Meals[9].BizName}
             Options={Data.Meals[9].Options}
           />
           <InfoTile
+            className="c-image"
             image={image11}
             ID={Data.Meals[10].ID}
             BizName={Data.Meals[10].BizName}
             Options={Data.Meals[10].Options}
           />
           <InfoTile
+            className="c-image"
             image={image12}
             ID={Data.Meals[11].ID}
             BizName={Data.Meals[11].BizName}

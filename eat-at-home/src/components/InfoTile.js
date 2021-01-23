@@ -19,16 +19,15 @@ export const InfoTile = (props) => {
       >
         <img
           className="mouse-action"
-          onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}
+          onMouseOver={() => setIsShown(true)}
+          onMouseOut={() => setIsShown(false)}
           src={props.image}
         ></img>
       </Link>
-      {isShown && (
-        <div className="box-text" onClick={handleClick(props.ID)}>
-          {props.BizName}:{props.Options}
-        </div>
-      )}
+
+      <div className="box-text" onClick={handleClick(props.ID)}>
+        {props.BizName}:{props.Options}
+      </div>
     </div>
   );
 };
