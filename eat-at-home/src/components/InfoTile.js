@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import hover from "./Hover";
 import { CompTemp } from "./CompTemp";
 export const InfoTile = (props) => {
   const handleClick = (bizID) => {
@@ -17,6 +18,7 @@ export const InfoTile = (props) => {
         }}
       >
         <img
+          className="mouse-action"
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
           src={props.image}
