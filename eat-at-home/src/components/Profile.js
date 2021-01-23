@@ -4,12 +4,12 @@ import image from "./images/Team/banana.jpeg";
 
 function Profile() {
   return (
-    <div classname="main">
+    <div className="main">
       <NavBar />
       <div className="profile-items">
-        <div class="row">
-          <div class="column">
-            <div class="c-image">
+        <div className="row">
+          <div className="column">
+            <div className="c-image">
               <img src={image}></img>
             </div>
             <button className="button">Logout</button>
