@@ -113,6 +113,7 @@ class CompTemp extends React.Component {
         <NavBar />
 
         <h4>{BizName}</h4>
+
         <div class="compTemp-items">
           <img class="compTemp-image" src={image1} />
           <SaveButton userID={this.state.userID} companyID={this.state.bizID} />
@@ -158,6 +159,9 @@ class CompTemp extends React.Component {
                 <Reviews userID={review.user_id} reviewText={review.review} />
               ))}
             </div>
+
+       
+
           </div>
         </div>
       </div>
