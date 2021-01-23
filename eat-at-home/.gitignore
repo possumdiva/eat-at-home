@@ -33,6 +33,5 @@ yarn-error.log*
 development
 
 .eslintcache
-../.eslintcache
-../../.eslintcache
-eat-at-home./eslintcache
+.eslintcache.orig
+
