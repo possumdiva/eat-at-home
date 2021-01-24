@@ -30,7 +30,7 @@ function Login() {
     });
 
     return (
-        <button onClick={signIn} className="button">
+        <button onClick={signIn} className="hooks-button">
             <img src="icons/google.svg" alt="google login" className="icon"></img>
 
             <span className="buttonText">Sign in with Google</span>
