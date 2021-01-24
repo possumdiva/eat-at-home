@@ -12,7 +12,7 @@ function Profile() {
             <div className="c-image">
               <img src={image}></img>
             </div>
-            <button className="button">Logout</button>
+            <a href="http://localhost:8080/logout"><button className="button">Logout</button></a>
           </div>
         </div>
       </div>
