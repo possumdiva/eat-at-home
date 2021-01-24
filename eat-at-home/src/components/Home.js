@@ -40,6 +40,9 @@ function Home() {
           deliver what you need
         </p>{" "}
         <p>right to your doorstep!</p>
+        <div classame="bold-text">
+          <button className="button">Login</button>
+        </div>
       </div>
       <div className="feature-divider"></div>
       <hr size="2" width="600px" color="black"></hr>
