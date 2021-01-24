@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
+import "./App.css";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import Groceries from "./components/Groceries";
@@ -11,11 +12,15 @@ import Favorites from "./components/Favorites";
 import Home from "./components/Home";
 import CompTemp from "./components/CompTemp";
 import Ratings from "./components/Rating";
+import Login from "./components/Login";
+import LogOut from "./components/LogOut";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
+        <Login />
+        <LogOut />
         <div className="nav">
           <Router>
             <Switch>
