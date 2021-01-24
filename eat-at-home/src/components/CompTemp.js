@@ -32,6 +32,17 @@ class CompTemp extends React.Component {
   }
 
   async componentDidMount() {
+    try { 
+      const idURL = "/api/user/id";
+      const idResponse = await eahServer.get(idURL);
+      // console.log(idResponse.data.userID.id);
+      this.setState({
+        userID: idResponse.data.userID.id
+      })
+    }
+    catch(err) {
+      console.log('there was an error retrieving the id');
+    }
     try {
       const theURL = "/api/comp/review/" + this.state.bizID;
       const response = await eahServer.get(theURL);
