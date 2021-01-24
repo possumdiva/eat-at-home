@@ -135,6 +135,8 @@ h1 span {
   border-style: groove;
   border-width: 6px;
   border-color: rgb(197, 58, 36);
+  padding: 30px;
+  margin: 20px;
 }
 .c-image img {
   width: 100%;
@@ -204,8 +206,10 @@ h1 span {
 }
 .about {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 20px;
+  padding-top: 20px;
 }
 .profile-image {
   width: 100px;
