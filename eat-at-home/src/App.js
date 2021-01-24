@@ -16,6 +16,21 @@ import Login from "./components/Login";
 import LogOut from "./components/LogOut";
 
 class App extends Component {
+  async componentDidMount() {
+    try { 
+      const idURL = "/api/user/id";
+      const idResponse = await eahServer.get(idURL);
+      this.setState({
+        userID: idResponse.data.userID.id
+      })
+      console.log('the id retrieved from app.js')
+      console.log(this.state.userID);      
+    }
+    catch(err) {
+      console.log('there was an error retrieving the id');
+    }
+  }
+
   render() {
     return (
       <div className="App">
