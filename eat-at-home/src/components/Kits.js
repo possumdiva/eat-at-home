@@ -16,12 +16,12 @@ import image12 from "./images/Kits/KitPic12.jpeg";
 
 function Kits() {
   return (
-    <div classname="main">
-      <div class="page-title">
+    <div className="main">
+      <div className="page-title">
         <h1>Meal Kits</h1>
       </div>
-      <div class="row">
-        <div class="column">
+      <div className="row">
+        <div className="column">
           <InfoTile
             image={image1}
             ID={Data.Mkits[0].ID}
@@ -42,7 +42,7 @@ function Kits() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image4}
             ID={Data.Mkits[3].ID}
@@ -63,7 +63,7 @@ function Kits() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image7}
             ID={Data.Mkits[6].ID}
@@ -84,7 +84,7 @@ function Kits() {
           />
         </div>
 
-        <div class="column">
+        <div className="column">
           <InfoTile
             image={image10}
             ID={Data.Mkits[9].ID}

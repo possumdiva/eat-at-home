@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import hover from "./Hover";
 import { CompTemp } from "./CompTemp";
 export const InfoTile = (props) => {
   const handleClick = (bizID) => {
-    console.log(bizID);
+    // console.log(bizID);
   };
   // console.log(props.Options);
   const [isShown, setIsShown] = useState(false);
@@ -17,16 +18,15 @@ export const InfoTile = (props) => {
         }}
       >
         <img
-          onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}
+          className="mouse-action"
+          onMouseOver={() => setIsShown(true)}
+          onMouseOut={() => setIsShown(false)}
           src={props.image}
-        ></img>
-      </Link>
-      {isShown && (
+        />
         <div className="box-text" onClick={handleClick(props.ID)}>
           {props.BizName}:{props.Options}
         </div>
-      )}
+      </Link>
     </div>
   );
 };

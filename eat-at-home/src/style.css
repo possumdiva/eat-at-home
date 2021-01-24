@@ -36,6 +36,9 @@ h4 {
   padding-left: 20px;
   margin: 20px;
 }
+.img {
+  margin: 0px;
+}
 
 .header-image {
   position: relative;
@@ -92,9 +95,12 @@ h1 span {
   text-align: center;
 }
 .info-text {
-  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+  padding-left: 10px;
   width: 600px;
-  text-align: left;
+  text-align: right;
 }
 .bold-text {
   font-weight: bold;
@@ -111,24 +117,29 @@ h1 span {
   border-bottom-style: solid;
 }
 
-.column img {
+.column {
   margin-top: 8px;
   vertical-align: middle;
 }
 
 .c-image {
+  border-color: rgb(197, 58, 36);
   position: relative;
   vertical-align: middle;
   object-fit: fill;
-  width: 100%;
-  height: 300px;
+  width: 300px;
   justify-content: space-between;
   margin: 20px 20px 20px 20px;
 }
-
+.about-image {
+  border-style: groove;
+  border-width: 6px;
+  border-color: rgb(197, 58, 36);
+}
 .c-image img {
   width: 100%;
 }
+
 .box-text {
   position: absolute;
   top: 50%;
@@ -137,9 +148,11 @@ h1 span {
   text-align: center;
   color: white;
   font-family: "Cabin Sketch", cursive;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
-  background-color: rgb(197, 58, 36);
+  background-color: rgb(197, 58, 36, 0.5);
+  height: auto;
+  width: 100%;
 }
 
 .page-title {
@@ -169,12 +182,11 @@ h1 span {
 .compTemp-items {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .rating-stars {
   padding-left: 20px;
-}
-.companyItems {
 }
 
 .button {
@@ -190,13 +202,21 @@ h1 span {
   height: 200px;
   width: 400px;
 }
-
-.html body main {
-  max-width: 1200px;
-  margin: 0;
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
-head {
-  max-width: 1200px;
-  margin: 0;
+.profile-image {
+  width: 100px;
+  height: 100px;
+}
+.profile-items {
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.info-tile {
+  width: 150px;
 }

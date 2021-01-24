@@ -32,7 +32,6 @@ yarn-error.log*
 **/.history
 development
 
-.eslintcache
-../.eslintcache
-../../.eslintcache
-eat-at-home./eslintcache
+.eslintcache*
+
+
