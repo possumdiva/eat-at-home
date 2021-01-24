@@ -22,12 +22,11 @@ export const InfoTile = (props) => {
           onMouseOver={() => setIsShown(true)}
           onMouseOut={() => setIsShown(false)}
           src={props.image}
-        ></img>
+        />
+        <div className="box-text" onClick={handleClick(props.ID)}>
+          {props.BizName}:{props.Options}
+        </div>
       </Link>
-
-      <div className="box-text" onClick={handleClick(props.ID)}>
-        {props.BizName}:{props.Options}
-      </div>
     </div>
   );
 };
