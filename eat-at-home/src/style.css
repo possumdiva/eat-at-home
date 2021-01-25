@@ -6,6 +6,8 @@ body {
   align-items: center;
 }
 
+/* used globally */
+
 h1 {
   position: absolute;
   left: 0;
@@ -38,47 +40,6 @@ h4 {
   margin: 20px;
 }
 
-.reviews-header {
-  display: -flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-  margin: 30px;
-  padding-bottom: 300px;
-}
-.img {
-  margin: 0px;
-}
-
-.header-image {
-  position: relative;
-  width: 100%;
-  z-index: -1;
-  padding-bottom: 30px;
-}
-.header-image img {
-  width: 100%;
-}
-.temp-image {
-  position: left;
-}
-.info-image {
-  position: left;
-}
-
-h1 span {
-  color: white;
-  font: bold 24px/45px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
-  background: none;
-  text-align: center;
-  font-size: 100px;
-  font-family: "Bodoni Moda", serif;
-  margin-bottom: 30px;
-  background-color: rgb(197, 58, 36);
-}
-
 .navbar {
   color: whitesmoke !important;
   background-color: rgb(197, 58, 36);
@@ -90,11 +51,13 @@ h1 span {
   padding-top: 30px;
   width: auto;
 }
+
 .nav a {
   color: whitesmoke;
   text-decoration: none;
   font-size: 20px;
 }
+
 .text {
   color: black;
   text-align: center;
@@ -106,15 +69,6 @@ h1 span {
   margin-left: 20px;
   width: 600px;
   text-align: left;
-}
-
-.button-pos {
-  display: flex;
-  margin-left: 40px;
-}
-.bold-text {
-  font-weight: bold;
-  font-size: 40px;
 }
 
 .feature_divider {
@@ -132,6 +86,94 @@ h1 span {
   vertical-align: middle;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 4px;
+  margin: 20px 20px 20px 20px;
+}
+
+.button {
+  background-color: rgb(197, 58, 36);
+  height: 40px;
+  width: 80px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.box {
+  height: 200px;
+  width: 400px;
+}
+
+/* CompTemp page styling */
+.reviews-header {
+  display: -flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+  padding-bottom: 300px;
+}
+.img {
+  margin: 0px;
+}
+.temp-image {
+  position: left;
+}
+
+.button-pos {
+  display: flex;
+  margin-left: 40px;
+}
+
+.compTemp-items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.compTemp-image {
+  padding-left: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.review-box {
+  padding-left: 30px;
+}
+
+/* home page styling */
+.header-image {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  padding-bottom: 30px;
+}
+.header-image img {
+  width: 100%;
+}
+
+h1 span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: none;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Bodoni Moda", serif;
+  margin-bottom: 30px;
+  background-color: rgb(197, 58, 36);
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* InfoTile styling */
 .c-image {
   border-color: rgb(197, 58, 36);
   position: relative;
@@ -141,15 +183,18 @@ h1 span {
   justify-content: space-between;
   margin: 20px 20px 20px 20px;
 }
+
+.c-image img {
+  width: 100%;
+}
+
+/*  About */
 .about-image {
   border-style: groove;
   border-width: 6px;
   border-color: rgb(197, 58, 36);
   padding: 30px;
   margin: 20px;
-}
-.c-image img {
-  width: 100%;
 }
 
 .box-text {
@@ -167,6 +212,7 @@ h1 span {
   width: 100%;
 }
 
+/* Groceries/Kits/Meals styling */
 .page-title {
   height: 60px;
   width: 300px;
@@ -176,53 +222,12 @@ h1 span {
   padding: 30px;
   margin-bottom: 0px 20px 20px 20px;
 }
-
 .column {
   display: flex;
   flex: 50%;
-  /* padding: 0 4px; */
   margin: 0px 20px 0px 0px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 4px;
-  margin: 20px 20px 20px 20px;
-}
-
-.compTemp-items {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 50px;
-}
-
-.compTemp-image {
-  padding-left: 20px;
-  height: 400px;
-  width: 400px;
-}
-
-.rating-stars {
-  padding-left: 20px;
-}
-
-.button {
-  background-color: rgb(197, 58, 36);
-  height: 40px;
-  width: 80px;
-  margin-top: 20px;
-  font-size: 20px;
-  margin-left: 20px;
-}
-
-.review-box {
-  padding-left: 30px;
-}
-.box {
-  height: 200px;
-  width: 400px;
-}
 .about {
   display: flex;
   justify-content: space-between;
