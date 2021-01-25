@@ -158,18 +158,29 @@ class CompTemp extends React.Component {
 
               <button className="button">Submit</button>
             </form>
+
+            {/* <div className="reviews-header">
+              <h3>Reviews</h3>
+              <div className="info-text">
+                {this.state.userReviews.map((review) => (
+                  <Reviews userID={review.user_id} reviewText={review.review} />
+                ))}
+              </div>
+            </div> */}
+          </div>
+        </div>
+        <div className="feature-divider"></div>
+        <hr size="2" width="600px" color="black"></hr>
+
+        <div className="reviews-header">
+          <div>
             <div>
-              <p>{this.state.myReview}</p>
-            </div>
-            <div>
-              <h3>User Reviews</h3>
               {this.state.userReviews.map((review) => (
                 <Reviews userID={review.user_id} reviewText={review.review} />
               ))}
             </div>
           </div>
         </div>
-        <div className="review-text"></div>
       </div>
     );
   }

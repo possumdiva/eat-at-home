@@ -27,6 +27,7 @@ h3 {
   padding-left: 30px;
   display: flex;
   align-items: flex-start;
+  font-size: 25px;
 }
 
 h4 {
@@ -35,6 +36,16 @@ h4 {
   font-size: 100px;
   padding-left: 20px;
   margin: 20px;
+}
+
+.reviews-header {
+  display: -flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+  padding-bottom: 300px;
 }
 .img {
   margin: 0px;
@@ -183,7 +194,7 @@ h1 span {
 .compTemp-items {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .compTemp-image {
@@ -201,7 +212,6 @@ h1 span {
   height: 40px;
   width: 80px;
   margin-top: 20px;
-  /* border-radius: 25px; */
   font-size: 20px;
   margin-left: 20px;
 }
