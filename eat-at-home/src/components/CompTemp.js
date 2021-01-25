@@ -85,7 +85,6 @@ class CompTemp extends React.Component {
     event.preventDefault();
     this.setState({ submitProcessing: true });
     const response = await eahServer.post("/api/review", {
-      user_id: this.state.userID,
       company_id: this.state.bizID,
       review: this.state.currentReview,
     });

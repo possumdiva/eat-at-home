@@ -12,15 +12,12 @@ import Favorites from "./components/Favorites";
 import Home from "./components/Home";
 import CompTemp from "./components/CompTemp";
 import Ratings from "./components/Rating";
-import Login from "./components/Login";
-import LogOut from "./components/LogOut";
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <Login />
-        <LogOut />
         <div className="nav">
           <Router>
             <Switch>
