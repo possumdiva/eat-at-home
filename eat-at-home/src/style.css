@@ -135,6 +135,8 @@ h1 span {
   border-style: groove;
   border-width: 6px;
   border-color: rgb(197, 58, 36);
+  padding: 30px;
+  margin: 20px;
 }
 .c-image img {
   width: 100%;
@@ -191,10 +193,13 @@ h1 span {
 
 .button {
   background-color: rgb(197, 58, 36);
-  height: 30px;
-  width: 70px;
+  height: 50px;
+  width: 90px;
   margin-top: 20px;
+  border-radius: 25px;
+  font-size: 20px;
 }
+
 .review-box {
   padding-left: 30px;
 }
@@ -204,8 +209,10 @@ h1 span {
 }
 .about {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 20px;
+  padding-top: 20px;
 }
 .profile-image {
   width: 100px;

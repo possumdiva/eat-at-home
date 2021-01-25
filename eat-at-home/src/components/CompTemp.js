@@ -33,16 +33,6 @@ class CompTemp extends React.Component {
 
   async componentDidMount() {
     try {
-      const idURL = "/api/user/id";
-      const idResponse = await eahServer.get(idURL);
-      // console.log(idResponse.data.userID.id);
-      this.setState({
-        userID: idResponse.data.userID.id,
-      });
-    } catch (err) {
-      console.log("there was an error retrieving the id");
-    }
-    try {
       const theURL = "/api/comp/review/" + this.state.bizID;
       const response = await eahServer.get(theURL);
       const rawData = response.data;
@@ -85,6 +75,7 @@ class CompTemp extends React.Component {
     event.preventDefault();
     this.setState({ submitProcessing: true });
     const response = await eahServer.post("/api/review", {
+      user_id: this.state.userID,
       company_id: this.state.bizID,
       review: this.state.currentReview,
     });
@@ -125,7 +116,6 @@ class CompTemp extends React.Component {
 
         <div className="compTemp-items">
           <img className="compTemp-image" src={image1} />
-
           <div>
             <a className="compTemp-main-heading" href={link}></a>
             <div className="rating-stars">
@@ -156,7 +146,7 @@ class CompTemp extends React.Component {
               <div className="info-text">
                 <button className="button">Submit</button>
               </div>
-              <div className="button">
+              <div>
                 <SaveButton
                   userID={this.state.userID}
                   companyID={this.state.bizID}
