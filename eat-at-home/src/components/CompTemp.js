@@ -118,17 +118,29 @@ class CompTemp extends React.Component {
           <img className="compTemp-image" src={image1} />
           <div>
             <a className="compTemp-main-heading" href={link}></a>
-            <div className="rating-stars">
+            {/* <div className="rating-stars">
               <Rating userID={this.state.userID} companyID={this.state.bizID} />
               <Stars userID={this.state.userID} companyID={this.state.bizID} />
-            </div>
-            <h3>Average Using Rating: {this.state.averageRating}</h3>
+            </div> */}
+            {/* <h3>Average Using Rating: {this.state.averageRating}</h3> */}
             <h3>Description:</h3>
             <div className="info-text">
               <p className="info-text">{Description}</p>{" "}
             </div>
+            <div className="button-pos">
+              Click "Save" to add company to your favorites!
+            </div>
+            <div>
+              <SaveButton
+                userID={this.state.userID}
+                companyID={this.state.bizID}
+              />
+            </div>
             <h3>Pricing:</h3>
-            <p className="info-text">{Pricing}</p>
+            <div className="info-text">
+              <p>{Pricing}</p>
+            </div>
+
             <h3>Options:</h3>
             <p className="info-text">{Options}</p>
             <form onSubmit={this.handleSubmit}>
@@ -143,18 +155,10 @@ class CompTemp extends React.Component {
                   placeholder="Write Your Own Review"
                 />
               </div>
-              <div className="info-text">
-                <button className="button">Submit</button>
-              </div>
-              <div>
-                <SaveButton
-                  userID={this.state.userID}
-                  companyID={this.state.bizID}
-                />
-              </div>
+
+              <button className="button">Submit</button>
             </form>
             <div>
-              <h5>Your Review:</h5>
               <p>{this.state.myReview}</p>
             </div>
             <div>
@@ -165,6 +169,7 @@ class CompTemp extends React.Component {
             </div>
           </div>
         </div>
+        <div className="review-text"></div>
       </div>
     );
   }
