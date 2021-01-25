@@ -97,10 +97,10 @@ h1 span {
 .info-text {
   display: flex;
   justify-content: center;
-  margin: 70px;
+
   padding-left: 10px;
   width: 600px;
-  text-align: right;
+  text-align: left;
 }
 .bold-text {
   font-weight: bold;
