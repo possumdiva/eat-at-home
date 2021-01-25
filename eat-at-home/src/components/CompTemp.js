@@ -147,7 +147,12 @@ class CompTemp extends React.Component {
               <div className="info-text">
                 <button className="button">Submit</button>
               </div>
-              <button className="button">Save</button>
+              <div className="button-CT">
+                <SaveButton
+                  userID={this.state.userID}
+                  companyID={this.state.bizID}
+                />
+              </div>
             </form>
             <div>
               <h5>Your Review:</h5>
