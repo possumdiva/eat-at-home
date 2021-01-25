@@ -50,18 +50,15 @@ class Profile extends React.Component {
         <div className="profile-items">
           <div className="row">
             <div className="column">
-              <div className="c-image">
+              <div className="profile-image">
                 <img src={image}></img>
               </div>
-              <a href="http://localhost:8080/logout">
-                <button className="button">Logout</button>
-              </a>
             </div>
           </div>
         </div>
         <div
           className="test"
-          style={{ margin: "2rem", border: "cyan 4px solid", color: "magenta" }}
+          // style={{ margin: "2rem", border: "cyan 4px solid", color: "magenta" }}
         >
           {this.state.saves.map((save, idx) => {
             const bizID = save.company_id;
@@ -82,18 +79,23 @@ class Profile extends React.Component {
               <div
                 key={idx}
                 className="save"
-                style={{ border: "2px solid hotpink" }}
+                // style={{ border: "2px solid hotpink" }}
               >
-                <div>{company.BizName}</div>
-                <div>{company.link}</div>
-                <div>{company.ID}</div>
-                <div>{company.description}</div>
-                <div>{company.pricing}</div>
-                <div>{company.Image}</div>
-                <div>{company.Options}</div>
+                <div className="save-items">
+                  <div className="line-header">{company.BizName}</div>
+                  <div className="line-itmes">{company.link}</div>
+                  <div className="line-itmes">{company.description}</div>
+                  <div className="line-itmes">{company.pricing}</div>
+                  <div className="line-itmes">{company.Options}</div>
+                </div>
               </div>
             );
           })}
+        </div>
+        <div className="save-items">
+          <a href="http://localhost:8080/logout">
+            <button className="button">Logout</button>
+          </a>
         </div>
       </div>
     );
