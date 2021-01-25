@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: process.env.BASE_URL
+  baseURL: "https://eat-at-home-server.herokuapp.com"
 });
 
 export default instance;
