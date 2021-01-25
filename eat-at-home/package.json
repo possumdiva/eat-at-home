@@ -16,6 +16,8 @@
     "react-star-rating-component": "^1.4.1",
     "web-vitals": "^0.2.4"
   },
+  "proxy": "http://localhost:8080/",	
+  "secure": false,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

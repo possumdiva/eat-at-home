@@ -41,7 +41,7 @@ function Home() {
         </p>{" "}
         <p>right to your doorstep!</p>
         <div classame="bold-text">
-          <a href="https://eat-at-home-server.herokuapp.com/auth/github"><button className="button">Login</button></a>
+          <a href="http://localhost:8080/auth/github"><button className="button">Login</button></a>
         </div>
       </div>
       <div className="feature-divider"></div>
