@@ -116,7 +116,6 @@ class CompTemp extends React.Component {
 
         <div className="compTemp-items">
           <img className="compTemp-image" src={image1} />
-          <SaveButton userID={this.state.userID} companyID={this.state.bizID} />
           <div>
             <a className="compTemp-main-heading" href={link}></a>
             <div className="rating-stars">
@@ -147,7 +146,7 @@ class CompTemp extends React.Component {
               <div className="info-text">
                 <button className="button">Submit</button>
               </div>
-              <div className="button-CT">
+              <div>
                 <SaveButton
                   userID={this.state.userID}
                   companyID={this.state.bizID}
