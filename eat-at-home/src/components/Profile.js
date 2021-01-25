@@ -32,7 +32,7 @@ class Profile extends React.Component {
               <div className="c-image">
                 <img src={image}></img>
               </div>
-              <a href="http://localhost:8080/logout">
+              <a href="https://eat-at-home-server.herokuapp.com/logout">
                 <button className="button">Logout</button>
               </a>
             </div>
