@@ -14,24 +14,11 @@ class SaveButton extends React.Component {
 
   async componentDidMount() {
     try {
-      const idURL = "/api/user/id";
-      const idResponse = await eahServer.get(idURL);
-      // console.log(idResponse.data.userID.id);
-      this.setState({
-        userID: idResponse.data.userID.id,
-      });
-    } catch (err) {
-      console.log("there was an error retrieving the id");
-    }
-    try {
       const savesURL = "/api/this_user/saves";
-      // console.log(savesURL);
       const savesResponse = await eahServer.get(savesURL);
       const rawData = savesResponse.data;
-      console.log("consoling the data from userless call");
+      console.log("consoling the saves for this user");
       console.log(rawData);
-      // console.log(this.props.company_id);
-      // console.log(rawData[0]);
       let obj = rawData.find((o) => o.company_id === this.props.companyID);
       if (obj === undefined) {
       } else {
@@ -40,7 +27,6 @@ class SaveButton extends React.Component {
           savedID: obj.id,
         });
       }
-      // console.log(this.state);
     } catch (err) {
       console.log(`There was an error loading the saves information: ` + err);
     }
@@ -55,7 +41,6 @@ class SaveButton extends React.Component {
       const response = await eahServer.post(theURL, {
         company_id: bizID,
       });
-      // console.log(response.data.id);
       this.setState({
         saved: !this.state.saved,
         savedID: response.data.id,
