@@ -112,17 +112,29 @@ class CompTemp extends React.Component {
           <img className="compTemp-image" src={image1} />
           <div>
             <a className="compTemp-main-heading" href={link}></a>
-            <div className="rating-stars">
+            {/* <div className="rating-stars">
               <Rating userID={this.state.userID} companyID={this.state.bizID} />
               <Stars userID={this.state.userID} companyID={this.state.bizID} />
-            </div>
-            <h3>Average Using Rating: {this.state.averageRating}</h3>
+            </div> */}
+            {/* <h3>Average Using Rating: {this.state.averageRating}</h3> */}
             <h3>Description:</h3>
             <div className="info-text">
               <p className="info-text">{Description}</p>{" "}
             </div>
+            <div className="button-pos">
+              Click "Save" to add company to your favorites!
+            </div>
+            <div>
+              <SaveButton
+                userID={this.state.userID}
+                companyID={this.state.bizID}
+              />
+            </div>
             <h3>Pricing:</h3>
-            <p className="info-text">{Pricing}</p>
+            <div className="info-text">
+              <p>{Pricing}</p>
+            </div>
+
             <h3>Options:</h3>
             <p className="info-text">{Options}</p>
             <form onSubmit={this.handleSubmit}>
@@ -137,22 +149,26 @@ class CompTemp extends React.Component {
                   placeholder="Write Your Own Review"
                 />
               </div>
-              <div className="info-text">
-                <button className="button">Submit</button>
-              </div>
-              <div>
-                <SaveButton
-                  userID={this.state.userID}
-                  companyID={this.state.bizID}
-                />
-              </div>
+
+              <button className="button">Submit</button>
             </form>
+
+            {/* <div className="reviews-header">
+              <h3>Reviews</h3>
+              <div className="info-text">
+                {this.state.userReviews.map((review) => (
+                  <Reviews userID={review.user_id} reviewText={review.review} />
+                ))}
+              </div>
+            </div> */}
+          </div>
+        </div>
+        <div className="feature-divider"></div>
+        <hr size="2" width="600px" color="black"></hr>
+
+        <div className="reviews-header">
+          <div>
             <div>
-              <h5>Your Review:</h5>
-              <p>{this.state.myReview}</p>
-            </div>
-            <div>
-              <h3>User Reviews</h3>
               {this.state.userReviews.map((review) => (
                 <Reviews userID={review.user_id} reviewText={review.review} />
               ))}
