@@ -19,18 +19,18 @@ class App extends Component {
   }
 
   componentDidMount(){
-    console.log('checking login status')
+    let negativeOne = '-1';
+    let theZero = '0';
     let theCookies = document.cookie;
     let hereOrNot = theCookies.search("connect.sid");
-    console.log(typeof hereOrNot);
-    console.log(hereOrNot);
+    let theToggle = '-1';
+    let theOtherToggle = '0';
+
     if (hereOrNot === '-1') {
-      console.log("Can log in")
       this.setState({
         canAccess: false
       })
     }
-    console.log(this.state.canAccess);
   }
 
   render() {
