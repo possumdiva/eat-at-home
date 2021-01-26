@@ -4,11 +4,9 @@ import "./style.css";
 import "./App.css";
 import Profile from "./components/Profile";
 import About from "./components/About";
-import Groceries from "./components/Groceries";
-import Reviews from "./components/Reviews";
 import Home from "./components/Home";
 import CompTemp from "./components/CompTemp";
-import Ratings from "./components/Rating";
+import ProtectedRoute from "./components/ProtectedRoute"
 
 class App extends Component {
   constructor(props) {
@@ -17,17 +15,16 @@ class App extends Component {
     }
   }
 
+
+
   componentDidMount(){
     let theCookies = document.cookie;
     let hereOrNot = parseInt(theCookies.search("connect.sid"));
-    let thisIsWeird = false;
     if (hereOrNot === 0) {
       this.setState({
         canAccess: true
       });
-      thisIsWeird = true;
     }
-    console.log(thisIsWeird);
   }
 
   render() {
@@ -37,12 +34,10 @@ class App extends Component {
           <Router>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/profile" component={Profile} />
+              <ProtectedRoute path="/profile" component={Profile} />
               <Route path="/about" component={About} />
-              <Route path="/ratings" component={Ratings} />
-              <Route path="/groceries" component={Groceries} />
-              <Route path="/reviews" component={Reviews} />
               <Route path="/comptemp" component={CompTemp} />
+              <ProtectedRoute canAccess={this.state.canAccess} component={Home} />
             </Switch>
           </Router>
         </div>
