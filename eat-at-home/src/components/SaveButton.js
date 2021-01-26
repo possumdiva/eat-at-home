@@ -26,9 +26,9 @@ class SaveButton extends React.Component {
           savedID: obj.id,
         });
       }
-    } catch (err) {
+      } catch (err) {
+      }
     }
-  }
 
   handleClick = async (event) => {
     const bizID = this.props.companyID;
