@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# Eat @ Home :fork_and_knife: :stew: :poultry_leg: :peach:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/35972972/105803748-15b19b80-5f6c-11eb-9689-d35bec3948eb.png)
 
-## Available Scripts
+![GitHub language count](https://img.shields.io/github/languages/count/possumdiva/eat-at-home)
+![GitHub last commit](https://img.shields.io/github/last-commit/possumdiva/eat-at-home)
+![GitHub contributors](https://img.shields.io/github/contributors/possumdiva/eat-at-home?color=purple)
+![GitHub top language](https://img.shields.io/github/languages/top/possumdiva/eat-at-home?color=red)
+![NPM](https://img.shields.io/npm/l/express)
 
-In the project directory, you can run:
 
-### `npm start`
+***Eat at Home - From produce delivery to dinner meals to online grocery.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Live website](https://eat-at-home-server.herokuapp.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Purpose
+Eat at Home is an app for users who want a comprehensive list of meal and online grocery delivery services.  Many of us are tired of trying to keep meals tasty and exciting and they want options so they don't have to cook every night and they don't have to run back and forth to the grocery store.
 
-### `npm test`
+## :hammer_and_wrench: Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- CSS
+- React.js
+- Javascript
+- Node.js
+- Express.js
+- Passport.js
+- PostgreSQL
+- Sequelize
+- OAuth Authentication
+- Heroku
 
-### `npm run build`
+ ## 🖥 Screenshots:
+#### :point_down: Eat at Home | Home Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/35972972/105805071-3b8c6f80-5f6f-11eb-9025-e4a999246d4b.png)
+<br />
+<br />
+![image](https://user-images.githubusercontent.com/35972972/105805343-ca998780-5f6f-11eb-9b12-87a7fc10cd6e.png)
+<br />
+<br />
+![image](https://user-images.githubusercontent.com/35972972/105806174-7abbc000-5f71-11eb-9e0e-ef49b7956388.png)
+<br />
+<br />
+![image](https://user-images.githubusercontent.com/35972972/105806180-7ee7dd80-5f71-11eb-9442-10c49e032c4d.png)
+<br />
+<br />
+#### :point_down: Eat at Home | Profile Page
+<br />
+![image](https://user-images.githubusercontent.com/35972972/105807447-05052380-5f74-11eb-8d7b-fa7310c799af.png)
+<br />
+<br />
+![image](https://user-images.githubusercontent.com/35972972/105807543-34b42b80-5f74-11eb-966b-42a263caafed.png)
+<br />
+<br />
+![image](https://user-images.githubusercontent.com/35972972/105807576-44cc0b00-5f74-11eb-9ee2-608073e059b7.png)
+<br />
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙ How to run
+### 1. Clone this repository
+1. Under the repository name, click on the code button and copy the clone URL for this repository.
+2. Open your terminal and type ```git clone https://github.com/possumdiva/eat-at-home.git```.
+### 2. Open the folder
+After cloning the repository, use your favorite code editor to open the folder. We recommend [Visual Studio Code](https://code.visualstudio.com/).
+### 3. Enter in the directory
+Type ```cd eat-at-home``` in your terminal.
+### 4. Install the required packages
+You will need to install [PostgreSQL](https://www.postgresql.org/download/) and [Node.js](https://nodejs.org/en/) to run the back-end piece.
+### 5. Install the dependencies
+Run ```npm install``` or ```yarn install``` in your terminal.
+### 6. Execute the application
+Run ```npm start``` or ```yarn start``` in your terminal.
+### 7. Open in your browser
+The application will be available at http://localhost:3000.
+<br>
+<br>
+## Eat @ Home is also deployed on Heroku. You can see a demo by clicking [here](https://eat-at-home-server.herokuapp.com/).
+<br>
 
-### `npm run eject`
+## Code Snippet - Displays users selected favorite companies (Profile Component)
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+class Profile extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      reviews: [],
+      saves: [],
+      data: Data,
+    };
+  }
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  async componentDidMount() {
+    const savesUrl = "/api/this_user/saves";
+    const reviewsUrl = "/api/this_user/reviews";
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    const savesResponse = await eahServer.get(savesUrl);
+    const reviewsResponse = await eahServer.get(reviewsUrl);
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    this.setState({ reviews: reviewsResponse.data, saves: savesResponse.data });
 
-## Learn More
+  }
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  render() {
+    return (
+      <div className="main">
+        <NavBar />
+        <div className="profile-items">
+          <img src={image} alt="header"></img>
+        </div>
+        <div className="profile-items">
+          <div className="profile-header">
+            <h3>My Favorites</h3>
+          </div>
+        </div>
+        <div className="test">
+          {this.state.saves.map((save, idx) => {
+            const bizID = save.company_id;
+            let bizCategory;
+            if (bizID <= 12) {
+              bizCategory = "Meals";
+            } else if (bizID >= 24) {
+              bizCategory = "produce";
+            } else {
+              bizCategory = "Mkits";
+            }
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+            const company = this.state.data[bizCategory].find((biz) => {
+              return biz.ID === bizID;
+            });
+```            
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## :busts_in_silhouette: Team Members:
+  
+  * Stacey Graham <br>
+  [GitHub](https://github.com/stashag) <br />
+  [Portfolio](https://www.stacey.codes)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  * Heather Luttrell <br>
+  [GitHub](https://github.com/possumdiva)
+  <br />
+  [Portfolio](www.heatherluttrell.com)
+  
+  * Elijah Wilcott <br>
+  [GitHub](https://github.com/ejw773)
+  <br />
+  [Portfolio](https://elijahwilcott.com)
