@@ -4,7 +4,6 @@ import "./StyleTile.js";
 function StyleTile() {
   const [isShown, setIsShown] = useState(false);
   useEffect(() => {
-    console.log(isShown);
   }, [isShown]);
   return (
     <div

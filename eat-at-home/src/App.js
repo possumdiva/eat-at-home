@@ -5,15 +5,33 @@ import "./App.css";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import Groceries from "./components/Groceries";
-import Kits from "./components/Kits";
-import Meals from "./components/Meals";
 import Reviews from "./components/Reviews";
-import Favorites from "./components/Favorites";
 import Home from "./components/Home";
 import CompTemp from "./components/CompTemp";
 import Ratings from "./components/Rating";
 
 class App extends Component {
+  constructor(props) {
+  super(props);
+  this.state = {
+    canAccess: true
+    }
+  }
+
+  componentDidMount(){
+    console.log('checking login status')
+    let theCookies = document.cookie;
+    let hereOrNot = theCookies.search("connect.sid");
+    console.log(typeof hereOrNot);
+    console.log(hereOrNot);
+    if (hereOrNot === '-1') {
+      console.log("Can log in")
+      this.setState({
+        canAccess: false
+      })
+    }
+    console.log(this.state.canAccess);
+  }
 
   render() {
     return (

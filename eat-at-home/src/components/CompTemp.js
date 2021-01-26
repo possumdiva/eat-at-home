@@ -1,9 +1,6 @@
 import React from "react";
-import axios from "axios";
 import { NavBar } from "./NavBar";
 import image1 from "./images/Kits/KitPic1.jpeg";
-import Rating from "./Rating.jsx";
-import Stars from "./StarRating";
 import SaveButton from "./SaveButton";
 import Reviews from "./Reviews";
 import eahServer from "../api/eah-server";
@@ -60,9 +57,7 @@ class CompTemp extends React.Component {
         this.setState({ averageRating: "No Average Rating Yet" });
       }
       this.setState({ userReviews: allReviews });
-      // WRITE CODE HERE TO SET USERREVIEW LABEL
     } catch (err) {
-      console.log(`There was an error loading ratings from the server: ${err}`);
     }
   }
 
