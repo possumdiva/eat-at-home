@@ -9,23 +9,7 @@ class Profile extends React.Component {
     super(props);
     this.state = {
       reviews: [],
-      saves: [
-        // Hard code the save data for local testing without DB
-        // {
-        //   "id": 3,
-        //   "user_id": 2,
-        //   "company_id": 5,
-        //   "createdAt": "2021-01-25T02:40:04.952Z",
-        //   "updatedAt": "2021-01-25T02:40:04.952Z"
-        // },
-        // {
-        //   "id": 4,
-        //   "user_id": 2,
-        //   "company_id": 1,
-        //   "createdAt": "2021-01-25T03:07:54.280Z",
-        //   "updatedAt": "2021-01-25T03:07:54.280Z"
-        // }
-      ],
+      saves: [],
       data: Data,
     };
   }
@@ -48,18 +32,14 @@ class Profile extends React.Component {
       <div className="main">
         <NavBar />
         <div className="profile-items">
-          <div className="row">
-            <div className="column">
-              <div className="profile-image">
-                <img src={image}></img>
-              </div>
-            </div>
+          <img src={image} alt="header"></img>
+        </div>
+        <div className="profile-items">
+          <div className="profile-header">
+            <h3>My Favorites</h3>
           </div>
         </div>
-        <div
-          className="test"
-          // style={{ margin: "2rem", border: "cyan 4px solid", color: "magenta" }}
-        >
+        <div className="test">
           {this.state.saves.map((save, idx) => {
             const bizID = save.company_id;
             let bizCategory;
@@ -76,11 +56,7 @@ class Profile extends React.Component {
             });
 
             return (
-              <div
-                key={idx}
-                className="save"
-                // style={{ border: "2px solid hotpink" }}
-              >
+              <div key={idx} className="save">
                 <div className="save-items">
                   <div className="line-header">{company.BizName}</div>
                   <div className="line-itmes">{company.link}</div>
@@ -92,7 +68,39 @@ class Profile extends React.Component {
             );
           })}
         </div>
-        <div className="save-items">
+        <div className="profile-items">
+          <div className="profile-header">
+            <h3>My Reviews</h3>
+          </div>
+        </div>
+        <div className="test">
+          {this.state.reviews.map((review, idx) => {
+            const bizID = review.company_id;
+            let bizCategory;
+            if (bizID <= 12) {
+              bizCategory = "Meals";
+            } else if (bizID >= 24) {
+              bizCategory = "produce";
+            } else {
+              bizCategory = "Mkits";
+            }
+
+            const company = this.state.data[bizCategory].find((biz) => {
+              return biz.ID === bizID;
+            });
+
+            return (
+              <div key={idx} className="save">
+                <div className="save-items">
+                  <div className="line-header">{company.BizName}</div>
+                  <div className="line-itmes">{review.review}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="logOut-items">
           <a href="http://localhost:8080/logout">
             <button className="button">Logout</button>
           </a>
