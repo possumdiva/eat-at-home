@@ -12,6 +12,7 @@ class SaveButton extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  // Grabs the current users saves | Instead of grabbing and sorting, an API call for just the one business would be better
   async componentDidMount() {
     try {
       const savesURL = "/api/this_user/saves";
@@ -25,14 +26,15 @@ class SaveButton extends React.Component {
           savedID: obj.id,
         });
       }
-    } catch (err) {
-      console.log(`There was an error loading the saves information: ` + err);
+      } catch (err) {
+      }
     }
-  }
 
   handleClick = async (event) => {
     const bizID = this.props.companyID;
     const userID = this.props.userID;
+
+    // If the company has not been saved, save it and change the button text
     if (this.state.saved === false) {
       const theURL = "/api/this_user/save";
       const response = await eahServer.post(theURL, {
@@ -42,6 +44,8 @@ class SaveButton extends React.Component {
         saved: !this.state.saved,
         savedID: response.data.id,
       });
+      
+    // If the company HAS been saved, unsave it and change the button text
     } else {
       const theURL = "/api/saves/" + this.state.savedID;
       const response = await eahServer.delete(theURL, {

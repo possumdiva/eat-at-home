@@ -14,6 +14,7 @@ class Profile extends React.Component {
     };
   }
 
+  // Grabs this user's saved companies and all reviews from server, for display below
   async componentDidMount() {
     const savesUrl = "/api/this_user/saves";
     const reviewsUrl = "/api/this_user/reviews";

@@ -12,7 +12,7 @@ export const InfoTile = (props) => {
       <Link
         to={{
           pathname: "/comptemp",
-          state: { bizID: bizID },
+          state: { bizID: bizID }
         }}
       >
         <img

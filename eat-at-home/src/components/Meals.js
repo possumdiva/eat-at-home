@@ -16,11 +16,11 @@ import image12 from "./images/meals/MealPic12.jpeg";
 
 function Meals() {
   return (
-    <div classname="main">
-      <div class="page-title">
+    <div className="main">
+      <div className="page-title">
         <h1>Meals</h1>
       </div>
-      <div class="row">
+      <div className="row">
         <InfoTile
           image={image1}
           ID={Data.Meals[0].ID}
