@@ -8,7 +8,7 @@ import Groceries from "./Groceries";
 
 function Home() {
   return (
-    <div classname="main">
+    <div className="main">
       <NavBar />
       <h2>
         <span>EAT @ HOME</span>
