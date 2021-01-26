@@ -47,6 +47,13 @@ function About() {
             </p>
           </div>
         </div>
+        <div className="feature-divider"></div>
+        <hr size="2" width="600px" color="black"></hr>
+        <div className="about-credit">
+          <p>
+            All images used throughout this site were handpicked from Unsplash
+          </p>
+        </div>
       </div>
     </div>
   );
