@@ -109,7 +109,9 @@ class CompTemp extends React.Component {
         <h4>{BizName}</h4>
 
         <div className="compTemp-items">
-          <img className="compTemp-image" src={image1} />
+          <div className="compTemp-image">
+            <img src={image1} />
+          </div>
           <div>
             <a className="compTemp-main-heading" href={link}></a>
             <h3>Description:</h3>

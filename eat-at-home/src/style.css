@@ -115,6 +115,7 @@ h4 {
   width: 100%;
   min-width: 400px;
   max-width: 100%;
+  flex-wrap: wrap;
 }
 
 /* CompTemp page styling */
@@ -145,12 +146,14 @@ h4 {
   padding-bottom: 50px;
   width: 100%;
   padding-right: 20px;
+  flex-wrap: wrap;
 }
 
 .compTemp-image {
   padding-left: 20px;
   height: 400px;
   width: 400px;
+  padding-bottom: 10px;
 }
 
 .review-box {
