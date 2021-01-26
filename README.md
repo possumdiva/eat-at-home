@@ -8,12 +8,12 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/possumdiva/eat-at-home?color=red)
 ![NPM](https://img.shields.io/npm/l/express)
 
-**Eat at Home - From produce delivery to dinner meals to online grocery.** :fork_and_knife: :stew:
+**Eat @ Home - From produce delivery to dinner meals to online grocery.** :fork_and_knife: :stew:
 
 [Live website](https://eat-at-home-server.herokuapp.com/)
 
 ## Project Purpose
-Eat at Home is an app for users who want a comprehensive list of meal and online grocery delivery services.  Many of us are tired of trying to keep meals tasty and exciting and they want options so they don't have to cook every night and they don't have to run back and forth to the grocery store.
+Eat @ Home is an app for users who want a comprehensive list of meal and online grocery delivery services.  Many of us are tired of trying to keep meals tasty and exciting and they want options so they don't have to cook every night and they don't have to run back and forth to the grocery store.
 
 ## :hammer_and_wrench: Technologies Used
 
@@ -29,7 +29,7 @@ Eat at Home is an app for users who want a comprehensive list of meal and online
 - Heroku
 
  ## 🖥 Screenshots:
-#### :point_down: Eat at Home | Home Page
+#### :point_down: Eat @ Home | Home Page
 
 ![image](https://user-images.githubusercontent.com/35972972/105889886-a9bb4b80-5fdc-11eb-820c-2b51c5c4d461.png)
 <br />
@@ -43,7 +43,7 @@ Eat at Home is an app for users who want a comprehensive list of meal and online
 ![image](https://user-images.githubusercontent.com/35972972/105889995-c9527400-5fdc-11eb-8fa9-7cc7f3072fbe.png)
 <br />
 <br />
-#### :point_down: Eat at Home | Profile Page
+#### :point_down: Eat @ Home | Profile Page
 
 ![image](https://user-images.githubusercontent.com/35972972/105890016-d1aaaf00-5fdc-11eb-95da-6eda85001539.png)
 <br />
