@@ -8,8 +8,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/possumdiva/eat-at-home?color=red)
 ![NPM](https://img.shields.io/npm/l/express)
 
-
-***Eat at Home - From produce delivery to dinner meals to online grocery.
+**Eat at Home - From produce delivery to dinner meals to online grocery.
 
 [Live website](https://eat-at-home-server.herokuapp.com/)
 
@@ -59,8 +58,8 @@ Eat at Home is an app for users who want a comprehensive list of meal and online
 
 ## ⚙ How to run
 ### 1. Clone this repository
-Under the repository name, click on the code button and copy the clone URL for this repository.
-Open your terminal and type ```git clone https://github.com/possumdiva/eat-at-home.git```.
+1. Under the repository name, click on the code button and copy the clone URL for this repository.
+2. Open your terminal and type ```git clone https://github.com/possumdiva/eat-at-home.git```.
 ### 2. Open the folder
 After cloning the repository, use your favorite code editor to open the folder. We recommend [Visual Studio Code](https://code.visualstudio.com/).
 ### 3. Enter in the directory
@@ -74,8 +73,7 @@ Run ```npm start``` or ```yarn start``` in your terminal.
 ### 7. Open in your browser
 The application will be available at http://localhost:3000.
 <br>
-<br>
-## Eat @ Home is also deployed on Heroku. You can see a demo by clicking [here](https://eat-at-home-server.herokuapp.com/).
+Eat @ Home is also deployed on Heroku. You can see a demo by clicking [here](https://eat-at-home-server.herokuapp.com/).
 <br>
 
 ## Code Snippet - Displays users selected favorite companies (Profile Component)
@@ -135,16 +133,14 @@ class Profile extends React.Component {
 
 ## :busts_in_silhouette: Team Members:
   
-  * Stacey Graham <br>
+* Stacey Graham <br>
   [GitHub](https://github.com/stashag) <br />
   [Portfolio](https://www.stacey.codes)
 
   * Heather Luttrell <br>
-  [GitHub](https://github.com/possumdiva)
-  <br />
+  [GitHub](https://github.com/possumdiva)<br />
   [Portfolio](www.heatherluttrell.com)
   
   * Elijah Wilcott <br>
-  [GitHub](https://github.com/ejw773)
-  <br />
+  [GitHub](https://github.com/ejw773)<br />
   [Portfolio](https://elijahwilcott.com)
