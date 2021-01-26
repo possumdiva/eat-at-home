@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import StarRatingComponent from 'react-star-rating-component';
  
+
+// Currently in development
+
 class Stars extends React.Component {
   constructor() {
     super();
