@@ -132,11 +132,13 @@ class CompTemp extends React.Component {
             </div>
             <h3>Pricing:</h3>
             <div className="info-text">
-              <p>{Pricing}</p>
+              <p className="info-text">{Pricing}</p>
             </div>
 
             <h3>Options:</h3>
-            <p className="info-text">{Options}</p>
+            <div className="info-text">
+              <p className="info-text">{Options}</p>
+            </div>
             <form onSubmit={this.handleSubmit}>
               <label>
                 <h3>Write Your Own Review:</h3>
