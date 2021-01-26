@@ -14,23 +14,20 @@ class App extends Component {
   constructor(props) {
   super(props);
   this.state = {
-    canAccess: true
     }
   }
 
   componentDidMount(){
-    let negativeOne = '-1';
-    let theZero = '0';
     let theCookies = document.cookie;
-    let hereOrNot = theCookies.search("connect.sid");
-    let theToggle = '-1';
-    let theOtherToggle = '0';
-
-    if (hereOrNot === '-1') {
+    let hereOrNot = parseInt(theCookies.search("connect.sid"));
+    let thisIsWeird = false;
+    if (hereOrNot === 0) {
       this.setState({
-        canAccess: false
-      })
+        canAccess: true
+      });
+      thisIsWeird = true;
     }
+    console.log(thisIsWeird);
   }
 
   render() {
