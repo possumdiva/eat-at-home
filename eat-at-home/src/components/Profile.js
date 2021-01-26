@@ -102,7 +102,7 @@ class Profile extends React.Component {
         </div>
 
         <div className="logOut-items">
-          <a href="http://localhost:8080/logout">
+          <a href="https://eat-at-home-server.herokuapp.com/logout">
             <button className="button">Logout</button>
           </a>
         </div>
