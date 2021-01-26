@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
-// import eahServer from '../api/eah-server';
+// Currently in development
 
 const Rating = (props) => {
   const [rating, setRating] = useState(props.rating);

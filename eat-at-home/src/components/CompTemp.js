@@ -1,9 +1,6 @@
 import React from "react";
-import axios from "axios";
 import { NavBar } from "./NavBar";
 import image1 from "./images/Kits/KitPic1.jpeg";
-import Rating from "./Rating.jsx";
-import Stars from "./StarRating";
 import SaveButton from "./SaveButton";
 import Reviews from "./Reviews";
 import eahServer from "../api/eah-server";
@@ -31,17 +28,20 @@ class CompTemp extends React.Component {
   }
 
   async componentDidMount() {
+    // Get reviews for this company from the API
     try {
       const theURL = "/api/comp/review/" + this.state.bizID;
       const response = await eahServer.get(theURL);
       const rawData = response.data;
       let allRatings = [];
       let allReviews = [];
+      // Find this particular user's review, if there is one | Feature currently unused
       rawData.forEach((element) => {
         if (element.user_id === this.state.userID) {
           this.setState({ myReview: element.review });
         }
       });
+      // Split ratings from reviews, and puts them into arrays
       rawData.forEach((element) => {
         allRatings.push(element.rating);
         allReviews.push({
@@ -49,6 +49,7 @@ class CompTemp extends React.Component {
           user_id: element.user_id,
         });
       });
+      // Calculates the average rating | Still in development
       let sum = 0;
       allRatings.forEach((num) => {
         sum += num;
@@ -60,16 +61,16 @@ class CompTemp extends React.Component {
         this.setState({ averageRating: "No Average Rating Yet" });
       }
       this.setState({ userReviews: allReviews });
-      // WRITE CODE HERE TO SET USERREVIEW LABEL
     } catch (err) {
-      console.log(`There was an error loading ratings from the server: ${err}`);
     }
   }
 
+  // Grabs text as it's entered into the review box
   handleChange = (event) => {
     this.setState({ currentReview: event.target.value });
   };
 
+  // Submits context of review box to the server
   handleSubmit = async (event) => {
     event.preventDefault();
     this.setState({ submitProcessing: true });
@@ -83,6 +84,7 @@ class CompTemp extends React.Component {
   };
 
   render() {
+    // Grabs and organizes the business's information from the object
     const bizID = this.state.bizID;
     let bizCategory = "";
     if (bizID <= 12) {
@@ -109,6 +111,7 @@ class CompTemp extends React.Component {
         <h4>{BizName}</h4>
 
         <div className="compTemp-items">
+          {/* The image is the same for every company, even though we have dozens of images. High priority stretch goal. */}
           <img className="compTemp-image" src={image1} />
           <div>
             <a className="compTemp-main-heading" href={link}></a>
@@ -149,15 +152,6 @@ class CompTemp extends React.Component {
 
               <button className="button">Submit</button>
             </form>
-
-            {/* <div className="reviews-header">
-              <h3>Reviews</h3>
-              <div className="info-text">
-                {this.state.userReviews.map((review) => (
-                  <Reviews userID={review.user_id} reviewText={review.review} />
-                ))}
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="feature-divider"></div>
