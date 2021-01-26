@@ -65,9 +65,10 @@ h4 {
 
 .info-text {
   display: flex;
-  margin-left: 20px;
+  margin-left: 15px;
   width: 600px;
-  text-align: center;
+  text-align: left;
+  padding-right: 40px;
 }
 
 .feature_divider {
@@ -135,13 +136,15 @@ h4 {
 
 .button-pos {
   display: flex;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .compTemp-items {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
+  width: 100%;
+  padding-right: 20px;
 }
 
 .compTemp-image {
@@ -235,6 +238,10 @@ h1 span {
   width: 200px;
   text-align: center;
   padding-left: 20px;
+  color: black;
+}
+a {
+  color: black;
 }
 
 .aboutHI-image {
@@ -288,7 +295,6 @@ h1 span {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding-top: 30px;
   align-items: center;
 }
 

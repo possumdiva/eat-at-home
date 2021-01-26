@@ -112,11 +112,6 @@ class CompTemp extends React.Component {
           <img className="compTemp-image" src={image1} />
           <div>
             <a className="compTemp-main-heading" href={link}></a>
-            {/* <div className="rating-stars">
-              <Rating userID={this.state.userID} companyID={this.state.bizID} />
-              <Stars userID={this.state.userID} companyID={this.state.bizID} />
-            </div> */}
-            {/* <h3>Average Using Rating: {this.state.averageRating}</h3> */}
             <h3>Description:</h3>
             <div className="info-text">
               <p className="info-text">{Description}</p>{" "}
@@ -132,11 +127,13 @@ class CompTemp extends React.Component {
             </div>
             <h3>Pricing:</h3>
             <div className="info-text">
-              <p>{Pricing}</p>
+              <p className="info-text">{Pricing}</p>
             </div>
 
             <h3>Options:</h3>
-            <p className="info-text">{Options}</p>
+            <div className="info-text">
+              <p className="info-text">{Options}</p>
+            </div>
             <form onSubmit={this.handleSubmit}>
               <label>
                 <h3>Write Your Own Review:</h3>
