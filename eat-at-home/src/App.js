@@ -9,23 +9,6 @@ import CompTemp from "./components/CompTemp";
 import ProtectedRoute from "./components/ProtectedRoute"
 
 class App extends Component {
-  constructor(props) {
-  super(props);
-  this.state = {
-    }
-  }
-
-
-
-  componentDidMount(){
-    let theCookies = document.cookie;
-    let hereOrNot = parseInt(theCookies.search("connect.sid"));
-    if (hereOrNot === 0) {
-      this.setState({
-        canAccess: true
-      });
-    }
-  }
 
   render() {
     return (
@@ -37,7 +20,7 @@ class App extends Component {
               <ProtectedRoute path="/profile" component={Profile} />
               <Route path="/about" component={About} />
               <Route path="/comptemp" component={CompTemp} />
-              <ProtectedRoute canAccess={this.state.canAccess} component={Home} />
+              <ProtectedRoute component={Home} />
             </Switch>
           </Router>
         </div>
