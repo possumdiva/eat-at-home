@@ -9,7 +9,8 @@ import image from "./images/Team/aboutHeader.jpeg";
 function About() {
   const linkStyle = {
     color: 'black',
-    textDecoration: 'underline'
+    textDecoration: 'underline',
+    fontSize: 14
   }
   return (
     <div className="main">
@@ -22,10 +23,11 @@ function About() {
           <img className="about-image" src={image1}></img>
           <div className="about-text">
             <p>
-              <a href="https://www.elijahwilcott.com" target="_blank" style={linkStyle}>Elijah</a> is a full-stack developer living in South Carolina. He has
+              Elijah is a full-stack developer living in South Carolina. He has
               also worked as a photographer, prepress operator, and Chinese
               teacher. He loves good food and great films.
-            </p>
+            </p><br />
+            <p><a href="https://www.elijahwilcott.com" target="_blank" style={linkStyle}>www.elijahwilcott.com</a></p>
           </div>
         </div>
 
@@ -33,11 +35,12 @@ function About() {
           <img className="about-image" src={image2}></img>
           <div className="about-text">
             <p>
-              <a href="http://www.heatherluttrell.com/" target="_blank" style={linkStyle}>Heather</a> does web-developing with an eye for the front-end.
+              Heather does web-developing with an eye for the front-end.
               Full-stack by day, plant/animal lover, musician and artist by
               night. She enjoys hiking, yoga, knitting and tormenting her
               husband with healthy food and scrabble.
-            </p>
+            </p><br />
+            <p><a href="http://www.heather-luttrell.surge.sh/" target="_blank" style={linkStyle}>www.heather-luttrell.surge.sh</a></p>
           </div>
         </div>
 
@@ -45,10 +48,11 @@ function About() {
           <img className="about-image" src={image3}></img>
           <div className="about-text">
             <p>
-            <a href="https://www.stacey.codes/" target="_blank" style={linkStyle}>Stacey</a> is a Software Engineer who lives in Atlanta, GA with
+              Stacey is a Software Engineer who lives in Atlanta, GA with
               her family. She loves “ALL THINGS” Tech and also loves making
               jewelry, traveling, and yoga.
             </p>
+            <p><a href="https://www.stacey.codes/" target="_blank" style={linkStyle}>www.stacey.codes</a></p>
           </div>
         </div>
       </div>
