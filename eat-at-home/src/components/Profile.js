@@ -32,7 +32,9 @@ class Profile extends React.Component {
       <div className="main">
         <NavBar />
         <div className="profile-items">
-          <img src={image} alt="header"></img>
+          <div className="header-image">
+            <img src={image} alt="header"></img>
+          </div>
         </div>
         <div className="profile-items">
           <div className="profile-header">
