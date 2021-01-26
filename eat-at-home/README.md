@@ -45,7 +45,7 @@ Eat at Home is an app for users who want a comprehensive list of meal and online
 <br />
 <br />
 #### :point_down: Eat at Home | Profile Page
-<br />
+
 ![image](https://user-images.githubusercontent.com/35972972/105807447-05052380-5f74-11eb-8d7b-fa7310c799af.png)
 <br />
 <br />
@@ -59,8 +59,8 @@ Eat at Home is an app for users who want a comprehensive list of meal and online
 
 ## ⚙ How to run
 ### 1. Clone this repository
-1. Under the repository name, click on the code button and copy the clone URL for this repository.
-2. Open your terminal and type ```git clone https://github.com/possumdiva/eat-at-home.git```.
+Under the repository name, click on the code button and copy the clone URL for this repository.
+Open your terminal and type ```git clone https://github.com/possumdiva/eat-at-home.git```.
 ### 2. Open the folder
 After cloning the repository, use your favorite code editor to open the folder. We recommend [Visual Studio Code](https://code.visualstudio.com/).
 ### 3. Enter in the directory
