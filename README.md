@@ -8,7 +8,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/possumdiva/eat-at-home?color=red)
 ![NPM](https://img.shields.io/npm/l/express)
 
-**Eat at Home - From produce delivery to dinner meals to online grocery.
+**Eat at Home - From produce delivery to dinner meals to online grocery.** :fork_and_knife: :stew:
 
 [Live website](https://eat-at-home-server.herokuapp.com/)
 
@@ -139,7 +139,7 @@ class Profile extends React.Component {
 
   * Heather Luttrell <br>
   [GitHub](https://github.com/possumdiva)<br />
-  [Portfolio](www.heatherluttrell.com)
+  [Portfolio](http://www.heather-luttrell.surge.sh)
   
   * Elijah Wilcott <br>
   [GitHub](https://github.com/ejw773)<br />
