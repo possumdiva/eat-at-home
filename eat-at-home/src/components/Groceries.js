@@ -55,25 +55,6 @@ function Groceries() {
           BizName={Data.produce[5].BizName}
           Options={Data.produce[5].Options}
         />
-
-        <InfoTile
-          image={image7}
-          ID={Data.produce[6].ID}
-          BizName={Data.produce[6].BizName}
-          Options={Data.produce[6].Options}
-        />
-        <InfoTile
-          image={image8}
-          ID={Data.produce[6].ID}
-          BizName={Data.produce[6].BizName}
-          Options={Data.produce[6].Options}
-        />
-        <InfoTile
-          image={image9}
-          ID={Data.produce[6].ID}
-          BizName={Data.produce[6].BizName}
-          Options={Data.produce[6].Options}
-        />
       </div>
     </div>
   );
