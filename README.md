@@ -31,27 +31,27 @@ Eat at Home is an app for users who want a comprehensive list of meal and online
  ## 🖥 Screenshots:
 #### :point_down: Eat at Home | Home Page
 
-![image](https://user-images.githubusercontent.com/35972972/105805071-3b8c6f80-5f6f-11eb-9025-e4a999246d4b.png)
+![image](https://user-images.githubusercontent.com/35972972/105889886-a9bb4b80-5fdc-11eb-820c-2b51c5c4d461.png)
 <br />
 <br />
-![image](https://user-images.githubusercontent.com/35972972/105805343-ca998780-5f6f-11eb-9b12-87a7fc10cd6e.png)
+![image](https://user-images.githubusercontent.com/35972972/105889922-b5a70d80-5fdc-11eb-8c40-1a02cf8088c0.png)
 <br />
 <br />
-![image](https://user-images.githubusercontent.com/35972972/105806174-7abbc000-5f71-11eb-9e0e-ef49b7956388.png)
+![image](https://user-images.githubusercontent.com/35972972/105889982-c35c9300-5fdc-11eb-87e4-982eacc65e19.png)
 <br />
 <br />
-![image](https://user-images.githubusercontent.com/35972972/105806180-7ee7dd80-5f71-11eb-9442-10c49e032c4d.png)
+![image](https://user-images.githubusercontent.com/35972972/105889995-c9527400-5fdc-11eb-8fa9-7cc7f3072fbe.png)
 <br />
 <br />
 #### :point_down: Eat at Home | Profile Page
 
-![image](https://user-images.githubusercontent.com/35972972/105807447-05052380-5f74-11eb-8d7b-fa7310c799af.png)
+![image](https://user-images.githubusercontent.com/35972972/105890016-d1aaaf00-5fdc-11eb-95da-6eda85001539.png)
 <br />
 <br />
-![image](https://user-images.githubusercontent.com/35972972/105807543-34b42b80-5f74-11eb-966b-42a263caafed.png)
+![image](https://user-images.githubusercontent.com/35972972/105890035-d8392680-5fdc-11eb-98e1-ceea32db9c6f.png)
 <br />
 <br />
-![image](https://user-images.githubusercontent.com/35972972/105807576-44cc0b00-5f74-11eb-9ee2-608073e059b7.png)
+![image](https://user-images.githubusercontent.com/35972972/105890087-e8510600-5fdc-11eb-81ea-6302d59075a6.png)
 <br />
 <br />
 
