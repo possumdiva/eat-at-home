@@ -133,7 +133,7 @@ class Profile extends React.Component {
 
 ## :busts_in_silhouette: Team Members:
   
-* Stacey Graham <br>
+  * Stacey Graham <br>
   [GitHub](https://github.com/stashag) <br />
   [Portfolio](https://www.stacey.codes)
 
