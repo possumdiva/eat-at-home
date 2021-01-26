@@ -4,10 +4,10 @@ import { Redirect } from 'react-router-dom';
 class ProtectedRoute extends React.Component {
     // Redirects traffic home if there is no cookie; unfortunately, cookies still exist after logout, will need better solution
     render() {
+        // console.log(`Logged In: ${this.props.isLoggedIn}`)
+        const isLoggedIn = this.props.isLoggedIn;
         const Component = this.props.component;
-        let theCookies = document.cookie;
-        let hereOrNot = parseInt(theCookies.search("connect.sid"));
-        if (hereOrNot === 0) {
+        if (isLoggedIn === true) {
             return <Component />
         } else {
             return <Redirect to={{ pathname: '/' }} />
