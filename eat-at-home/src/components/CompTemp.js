@@ -161,7 +161,7 @@ class CompTemp extends React.Component {
           <div>
             <div>
               {this.state.userReviews.map((review) => (
-                <Reviews userID={review.user_id} reviewText={review.review} />
+                <Reviews userID={review.user_id} key={review.review} reviewText={review.review} />
               ))}
             </div>
           </div>
