@@ -114,7 +114,7 @@ h4 {
   padding-top: 20px;
   width: 100%;
   min-width: 400px;
-  max-width: 100%;
+  max-width: 1200px;
   flex-wrap: wrap;
 }
 
@@ -147,11 +147,12 @@ h4 {
   width: 100%;
   padding-right: 20px;
   flex-wrap: wrap;
+  max-width: 1200px;
 }
 
 .compTemp-image {
   padding-left: 20px;
-  height: 400px;
+  height: 300px;
   width: 400px;
   padding-bottom: 10px;
 }
