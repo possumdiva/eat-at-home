@@ -4,9 +4,7 @@ import hover from "./Hover";
 import { CompTemp } from "./CompTemp";
 export const InfoTile = (props) => {
   const handleClick = (bizID) => {
-    // console.log(bizID);
   };
-  // console.log(props.Options);
   const [isShown, setIsShown] = useState(false);
   const bizID = props.ID;
   return (

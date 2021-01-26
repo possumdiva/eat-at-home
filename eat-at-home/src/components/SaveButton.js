@@ -17,8 +17,6 @@ class SaveButton extends React.Component {
       const savesURL = "/api/this_user/saves";
       const savesResponse = await eahServer.get(savesURL);
       const rawData = savesResponse.data;
-      console.log("consoling the saves for this user");
-      console.log(rawData);
       let obj = rawData.find((o) => o.company_id === this.props.companyID);
       if (obj === undefined) {
       } else {
@@ -36,7 +34,6 @@ class SaveButton extends React.Component {
     const bizID = this.props.companyID;
     const userID = this.props.userID;
     if (this.state.saved === false) {
-      console.log(`The ID loaded to the button: ${userID}`);
       const theURL = "/api/this_user/save";
       const response = await eahServer.post(theURL, {
         company_id: bizID,
@@ -50,7 +47,6 @@ class SaveButton extends React.Component {
       const response = await eahServer.delete(theURL, {
         id: this.state.savedID,
       });
-      console.log(event);
       this.setState({
         saved: !this.state.saved,
       });

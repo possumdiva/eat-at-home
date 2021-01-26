@@ -6,17 +6,6 @@ import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 const Rating = (props) => {
   const [rating, setRating] = useState(props.rating);
 
-  // async function theResponse(rating) {
-  //   console.log(rating);
-  //   try {
-  //     const response = await eahServer.post('/api/rating', {
-
-  //     })
-  //   }
-  // }
-
-  // theResponse(rating);
-
   return (
     <div>
       {/* <h1>Rating:{rating}</h1> */}

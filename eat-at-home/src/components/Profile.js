@@ -23,8 +23,6 @@ class Profile extends React.Component {
 
     this.setState({ reviews: reviewsResponse.data, saves: savesResponse.data });
 
-    console.log(savesResponse);
-    console.log(reviewsResponse);
   }
 
   render() {
