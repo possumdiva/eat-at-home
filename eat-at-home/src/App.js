@@ -6,6 +6,7 @@ import Profile from "./components/Profile";
 import About from "./components/About";
 import Home from "./components/Home";
 import CompTemp from "./components/CompTemp";
+import LoginPage from './components/LoginPage';
 import ProtectedRoute from "./components/ProtectedRoute"
 import eahServer from "./api/eah-server";
 
@@ -64,6 +65,7 @@ class App extends Component {
               <ProtectedRoute path="/profile" isLoggedIn={this.state.isLoggedIn} component={Profile} />
               <Route path="/about" component={About} />
               <Route path="/comptemp" component={CompTemp} />
+              <Route path="/login_page" component={LoginPage} />
               <ProtectedRoute component={Home} />
             </Switch>
           </Router>
